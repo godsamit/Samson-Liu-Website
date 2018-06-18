@@ -6,6 +6,7 @@
   font-family:"Bebas Light";
   src: url(../fonts/BebasNeue/BebasNeue-Light.otf);
 }
+@font-face{
   font-family:"HelveticaNeue Light";
   src: url(../fonts/Helvetica/HelveticaNeueLTPro-Lt.otf);
 }
