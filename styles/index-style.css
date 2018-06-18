@@ -220,8 +220,6 @@ article.wrapper{
   overflow: visible;
   background-size: cover;
   background-position: center center;
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
 }
 
 .container .img{

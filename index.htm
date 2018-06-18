@@ -195,7 +195,8 @@
         layoutMode: 'fitRows',
         getSortData:{
           name: '.name',
-          time: '.time parseInt'
+          time: '.time parseInt',
+          ascending: '.time parseInt'
         },
         sortAscending: {
           name: true,
@@ -213,9 +214,10 @@
       // bind sort button click
       $('.sorters').on( 'click', 'button', function() {
         var sortValue = $(this).attr('data-sort-by');
-        var isAscending = (sortValue == 'time');
+        var isAscending = (sortValue == 'ascending'||'name');
+        console.log(isAscending);
         var newDirection = (isAscending) ? 'asc' : 'desc';
-        $gallery.isotope({ sortBy: sortValue, sortAscending: newDirection });
+        $gallery.isotope({ sortBy: sortValue, sortAscending: isAscending });
       });
 
       // change is-checked class on buttons
@@ -226,7 +228,6 @@
           $( this ).addClass('is-checked');
         });
       });
-
       $('.gallery').isotope({ sortBy: 'time' });
     </script>
   </body>
