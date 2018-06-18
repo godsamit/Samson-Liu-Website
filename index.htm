@@ -215,7 +215,6 @@
       $('.sorters').on( 'click', 'button', function() {
         var sortValue = $(this).attr('data-sort-by');
         var isAscending = (sortValue == 'ascending'|| sortValue =='name');
-        console.log(isAscending);
         var newDirection = (isAscending) ? 'asc' : 'desc';
         $gallery.isotope({ sortBy: sortValue, sortAscending: isAscending });
       });
