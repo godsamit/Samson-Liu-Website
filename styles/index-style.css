@@ -1,14 +1,14 @@
 @font-face{
   font-family:"Bebas Book";
-  src: url(../fonts/BebasNeue/BebasNeue-Book.otf);
+  src: url(./../fonts/BebasNeue/BebasNeue-Book.otf);
 }
 @font-face{
   font-family:"Bebas Light";
-  src: url(../fonts/BebasNeue/BebasNeue-Light.otf);
+  src: url(./../fonts/BebasNeue/BebasNeue-Light.otf);
 }
 @font-face{
   font-family:"HelveticaNeue Light";
-  src: url(../fonts/Helvetica/HelveticaNeueLTPro-Lt.otf);
+  src: url(./../fonts/Helvetica/HelveticaNeueLTPro-Lt.otf);
 }
 
 
