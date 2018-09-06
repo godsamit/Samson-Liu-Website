@@ -1,0 +1,154 @@
+/*make the header image go all the way*/
+body{
+  margin: 0;
+}
+/*header image container*/
+.header-img {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 40%;
+  margin-bottom: 0;
+}
+/*header image gradient*/
+.gradient1 {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#fff,#dc4225);
+	opacity: .5;
+}
+.gradient2 {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom,#fff,#000);
+	opacity: .4;
+}
+
+/* Centered header image text */
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-img h2{
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Bebas Light";
+  letter-spacing: 10px;
+  font-size:3.5em;
+  color: #fff;
+}
+
+/*project title*/
+#title{
+  overflow: auto;
+  padding: 70 0 70 0;
+}
+#title h1{
+  position:relative;
+  font-size: 4em;
+}
+
+h1{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Slideshow container */
+.slides1-container {
+  width: 65%;
+  position: relative;
+  margin: 0 auto; 
+  margin-bottom: 0 !important;
+}
+.slides2-container {
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  margin: auto; 
+}
+
+.initial-schemes {
+  display: inline-block;
+  position: relative;
+  margin-left: 9%;
+  width: 45%
+  overflow: scroll;
+}
+.initial-schemes img{
+  height: 100%;
+  display: inline-block;
+  margin:0 auto ;
+}
+
+
+.slides1 img{
+  width: 100%;
+  display: inline-block;
+  margin:0 auto ;
+}
+
+/*Using slick.js, change some default styling*/
+.slick-prev:before, .slick-next:before{
+  color:#00000080 !important;
+}
+
+.slick-prev {
+  margin-left: 40px !important;
+  z-index: 1;
+  }
+
+.slick-next {
+  margin-right: 40px !important;
+  z-index: 1;
+  }
+
+.slick-dots{
+  position: absolute;
+  bottom: 1%;
+  display: block;
+  width: 100%;
+  padding: 10;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li.slick-active button:before{
+  font-size: 10px;
+  color: #00000090;
+}
+.slick-dots li button:before{
+  opacity: .5;
+}
+
+/*text body*/
+.text{
+  width: 65%;
+  margin: 0 auto;
+}
+
+.text h2{
+  color: #eb652d;
+  font-family: "Bebas Book";
+  font-size: 1.7em;
+}
+
+.text P{
+  font-family: 'Source Code Pro', monospace;
+  font-weight: Extra-light;
+  color:#555;
+  
+}

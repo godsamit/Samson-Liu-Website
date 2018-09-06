@@ -1,16 +1,147 @@
 <!DOCYTYPE HTML>
-<html>
+<html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Threads</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta content="Portfolio of Samson Liu">
+  <title>Threads </title>
+  <link href="./../styles/slick.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./../scripts/isotope.pkgd.min.js"></script>
+  <script src="./../scripts/jQuery.smoothState.min.js"></script>
+  <link rel="stylesheet" href="./../styles/base-style.css">
+  <link rel="stylesheet" href="./../styles/works-style.css">
   </head>
   <body>
-    <aside>
-      <h5><a href="../index.htm">Go to Home</a></h5>
-      <h5><a href="../contact/contact.htm">Contact</a></h5>
-      <h5><a href="../about/about.htm">About</a></h5>
-    </aside>
-    <script src="scripts.js"></script>
+<!--
+    <header role="banner">
+      <a href="./../../index.htm"><h1>Samson Liu</h1></a>
+    <nav role="navigation">
+      <h3>
+        <a href="#">
+          About</a>
+      </h3>
+      <h3>
+        <a href="./../../contact/contact.htm">
+          Contact
+        </a>
+      </h3>
+    </nav>
+    </header>
+-->
+<!--header img-->
+    <div class="header-img" style="background: 
+    url('./../webpage-imgs/threads/View-1.png'); 
+    background-size: cover;
+    background-position: center;">
+      <div class="gradient1"></div>
+      <div class="gradient2"></div>
+      <h2 class="centered">Threads</h2>
+    </div>
+
+<!--main content-->
+    <div id="title">
+    <h1>FRESHWATER GALLERY,<br>ON WATER</h1>
+    </div>
+    
+    <div class="slides1-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="slides1">
+      <img src="./../webpage-imgs/threads/View-2.png">
+    </div>
+    <div class="slides1">
+      <img src="./../webpage-imgs/threads/View-3.png">
+    </div>
+    <div class="slides1">
+      <img src="./../webpage-imgs/threads/View-4.png">
+    </div>
+    <div class="slides1">
+      <img src="./../webpage-imgs/threads/View-1.png">
+    </div>
+
+    </div>
+    <br>
+
+<!--img gallery js-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript">
+      //sets up slider1
+    $(document).ready(function(){
+      $('.slides1-container').slick({
+        infinite: true,
+        dots: true,
+        speed: 300,
+        arrows: true});
+    });
+    </script>
+    
+
+    <div class="text">
+    <h2>SITE</h2>
+    <p>Pittburgh's Brunot Island has been "deserted" for almost 30 years. Various plans have been proposed to re-utilize the unused real estate. The studio proposes to build a freshwater gallery on the island, to introduce people to the pollutions and historical countermeasures in the Ohio River, to attract visitors and educate local people. 
+<br><br>
+    The studio was very open in terms of site choice: All island south to the Brunot Bridge was fair game. I moved through different designs very quickly to see what makes sense. In the end, I decided that I wanted to connect my architecture to the bridge. </p>
+    </div>
+<!--SiteAnalysis + InitialSchemes-->
+    <div class="text">
+      <div class="slides2-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="slides2">
+          <img src="./../webpage-imgs/threads/Site-1.png">
+        </div>
+        <div class="slides2">
+          <img src="./../webpage-imgs/threads/Site-2.png">
+        </div>
+        <div class="slides2">
+          <img src="./../webpage-imgs/threads/Site-3.png">
+        </div>
+        <div class="slides2">
+          <img src="./../webpage-imgs/threads/Site-4.png">
+        </div>
+      </div>
+      <div class="initial-schemes">
+        <img src="./../webpage-imgs/threads/schemes.png">
+      </div>
+      
+    </div>
+    
+    <script type="text/javascript">
+      //sets up slider1
+    $(document).ready(function(){
+      $('.slides2-container').slick({
+        infinite: true,
+        dots: true,
+        speed: 300,
+        centerMode: true,
+        variableWidth: true,
+        arrows: true});
+      var height = $('.slides2-container img').height();
+      $(".initial-schemes").css("height", height);
+    });
+
+    </script>
+    <div class="text">
+    <h2>DESIGN PROCESS</h2>
+    <p>Putting the gallery close to the bridge benefited my design in the following ways
+    1: It gives the architecture more context;
+    2: It makes the building more accessible to the public,especially bikers, by utilizing the existing footbridge;
+    3. It allows more public exposure from the shore.
+
+    I moved through process models to explore the structural possibility to have a building hanging under a bridge. I worked the idea of "frames" into the design: A series of frames are hang from both sides of the bridge, to serve as the structure of the building. This introduced logic into construction and allowed various “rise and fall”s on the floor and roof levels. Then, I worked on making the frames read lighter to create a bigger gallery space.</p>
+    </div>
+<!--DesignDiagrams + ProcessModels-->
+    <div class="text">
+    <h2>FINAL DESIGN</h2>
+    <p>The final design explored various experiences that this unique structure can offer to visitors. 
+
+    Inside the building, there are various floor-level changes, to create sequence and a sense of hierarchy between spaces. People can also see through the gaps onto the water, which created a more subtle visual interaction. There are glass-floored areas as well.
+
+    The accessible areas on the roof are selected to have unique views onto either the river or the island. What’s more, the area around the bridge abutment is carefully carved to create a more subtle interaction between visitors and the legacy of the bridge. There is an outdoor theater for contingent gatherings as well.</p>
+    </div>
+<!--Final Plans and Sections-->
+
   </body>
 </html>

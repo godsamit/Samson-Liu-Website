@@ -1,18 +1,75 @@
 <!DOCYTYPE HTML>
-<html>
+<html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>About</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta content="Portfolio of Samson Liu">
+  <title>Samson Liu</title>
+  <link rel="stylesheet" href="./../styles/base-style.css">
+  <link rel="stylesheet" href="./about-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./../scripts/isotope.pkgd.min.js"></script>
+  <script src="./../scripts/packery-mode.pkgd.min.js"></script>
+  <script src="./../scripts/velocity.min.js"></script>
+  <script src="./../scripts/barba.min.js" type="text/javascript"></script>
+  <script src="./../scripts/Transition.js"></script>
   </head>
   <body>
-    <h5>Download Resume:</h5>
-    <h6><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" download="SamsonResume" target="_blank">architecture</a></h6>
-    <h6><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" download="SamsonResume" target="_blank">UI/UX</a></h6>
-    <aside>
-      <h5><a href="../index.htm">Go to Home</a></h5>
-      <h5><a href="../Contact/contact.htm">Contact</a></h5>
-    </aside>
-    <script src="scripts.js"></script>
+    <header id="main" role="banner">
+      <a href="./../index.htm"><h1>Samson Liu</h1></a>
+    <nav role="navigation">
+      <h3>
+        <a class="one" href="./../index.htm">
+          Work</a>
+      </h3>
+      <h3>
+        <a class="two is-checked" href="#">
+          About</a>
+      </h3>
+      <h3>
+        <a class="three" href="./../contact/contact.htm">
+          Contact
+        </a>
+      </h3>
+    </nav>
+    </header>
+    <section id="barba-wrapper"class="bio">
+      <div class="barba-container grid-container">
+        <span class="headshot"></span>
+        <span>
+        <p class="about-me">
+          Hello there! My name is Samson, a 5th-year architecture student at Carnegie Mellon University, minoring in Human Computer Interaction.<br><br>      
+          My education has prepared me for designing immersive experiences, from physical to virtual, analog to digital. I'm interested in the possibilities of using virtual information to strengthen one's spatial perception. Right now, I am helping develop an Augmented Reality app for the CMU's School of Architecture, and I'm pursuing a year-long thesis about spatial design in VR, which I hope to put on this website soon.<br><br>
+          Outside the school, I have taught myself many things that I'm passionate about over the years. I became proficient in several coding languages, various designing and modeling softwares, as well as digital music production. <br>
+        </p></span>
+        <span>
+        <p class="about-site">
+          This website is the first iteration of many that's about to come. I will keep a log of updates in future versions.<br>
+          Right now on my mind:
+          <ul>
+            <li>Responsive Design</li>
+            <li>Embeded media</li>
+          </ul>
+          <p>Stay tuned!<br><br>      
+        </p></span>
+<!--to keep the grid in place-->
+        <span></span>
+<!--to keep the grid in place-->
+        <span class="links">
+          <h3>Resumes:</h3>
+            <h4 class="button"><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" download="SamsonResume" target="_blank">architecture</a></h4>
+            <h4 class="button"><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" download="SamsonResume" target="_blank">UI/UX</a></h4>
+        </span>
+        <span class="links">
+          <h3>code:</h3>
+            <h4 class="button"><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" target="_blank">github repo</a></h4>
+        </span>
+      </div>
+    </section>
+    <footer>
+      <p>Built with <a href="https://brackets.io">Brackets</a><br>       
+      &copy;Samson Liu, 2018, All rights reserved.</p>
+    </footer>
   </body>
 </html>
