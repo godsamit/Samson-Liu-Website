@@ -13,24 +13,24 @@ body{
 }
 /*header image gradient*/
 .gradient1 {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to bottom right,#fff,#dc4225);
-	opacity: .5;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right,#fff,#dc4225);
+  opacity: .5;
 }
 .gradient2 {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to bottom,#fff,#000);
-	opacity: .4;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom,#fff,#000);
+  opacity: .4;
 }
 
 /* Centered header image text */
@@ -151,4 +151,21 @@ h1{
   font-weight: Extra-light;
   color:#555;
   
+}
+
+.text div img{
+  height: 40% 
+}
+
+.text .slides2-container:last-of-type{
+  float:right;
+}
+
+.separater{
+  height: 1px;
+  width: 65%;
+  margin: 35px auto;
+  background: tomato;
+  border: none;
+  transition: .4s ease-in-out;
 }
