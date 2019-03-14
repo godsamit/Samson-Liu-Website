@@ -3,18 +3,18 @@
   <head>
   <meta charset="utf-8">
   <meta content="Portfolio of Samson Liu">
-  <title>Samson Liu, Designer </title>
-  <link rel="stylesheet" href="./../styles/base-style.css">
-  <link rel="stylesheet" href="./about-style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+  <title>Eggschange </title>
+  <link href="./../styles/slick.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="./../../scripts/isotope.pkgd.min.js"></script>
-  <script src="./../../scripts/velocity.min.js"></script>
-  <script src="./../../scripts/jQuery.smoothState.min.js"></script>
-  <script src="./../../scripts/packery-mode.pkgd.min.js"></script>
+  <script src="./../scripts/isotope.pkgd.min.js"></script>
+  <link rel="stylesheet" href="./../styles/base-style.css">
+  <link rel="stylesheet" href="./../styles/works-style.css">
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+<!--
     <header role="banner">
       <a href="./../../index.htm"><h1>Samson Liu</h1></a>
     <nav role="navigation">
@@ -29,7 +29,178 @@
       </h3>
     </nav>
     </header>
+-->
+<!--header img-->
+  <div class="header-img" style="background: 
+  url('./../webpage-imgs/eggschange/phone-mockup.jpg'); 
+  background-size: cover;
+  background-position: center;">
+    <div class="gradient1"></div>
+    <div class="gradient2"></div>
+    <h2 class="centered">Eggschange</h2>
+  </div>
 
-    <script src="scripts.js"></script>
+<!--main content-->
+  <div id="title">
+  <h1>EVERYONE'S A TEACHER</h1>
+  <h3>Project Date: 2018 Spring</h3>
+  </div>
+    
+  <div class="text">
+  <h2>INTENT</h2>
+  <p>For this project, our team developed an application prototype for peer-to-peer teaching. At the start of the project, we analyzed the research data from another team who already did market research and interviews in the relevant field. After going over the research data, and conducting some additional interviews we did on our own, we decided that the most important problems that our app needs to adress are:</p>
+    <ul>
+      <li>1. Improving mutual trust between teachers and students.</li>
+      <li>2. Incentivizing individual teachers to offer classes to their peers.</li>
+      <li>3. Verifying teacher expertise and appealing to users of all difficulty and experience levels.</li>
+    </ul>
+  <p>After going through this process of synthesizing the problem space of peer-to-peer teaching, we quickly generated and merged personas and scenarios to illustrate our findings, and to help move forward with the design process.</p>
+    <div class="tightImgRow">
+      <a data-featherlight href="./../webpage-imgs/eggschange/ResearchJourney.png">
+        <img src="./../webpage-imgs/eggschange/ResearchJourney.png">
+      </a>
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm0.png">
+        <img src="./../webpage-imgs/eggschange/brainstorm0.png">
+      </a>
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.jpg">
+        <img src="./../webpage-imgs/eggschange/brainstorm1.jpg">
+      </a>
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.5.png">     
+        <img src="./../webpage-imgs/eggschange/brainstorm1.5.png">
+      </a>
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm2.png">
+        <img src="./../webpage-imgs/eggschange/brainstorm2.png">
+      </a>
+    </div>
+  </div>
+  <p></p>
+  <hr class="separater">
+  <div class="text">
+    <h2>PERSONA, SCENARIOS AND STORYBOARDS</h2>
+    <div class="slides-text-container">
+      <div class="persona-text" id="persona-container-1">
+          <img class="persona-img" src="./../webpage-imgs/eggschange/persona1.png">
+          <h2>Bernice Woods</h2>
+          <h3>Retail Salesperson</h3>
+          <p>Bernice is a retail salesperson. She has a flexible schedule and is eager to learn more graphic design skills to help her career development. She wishes to take some freelance jobs in her spare time and potentially become a graphic designer. However, she doesn’t have a lot of money to spare to pay for personal tutoring; and she finds online video courses ineffective, since there’s no feedback or suggestions. She is considering requesting lessons from her high school friends, some of whom are now graphic designers, but she isn’t sure how much free time they might have to teach her with their busy schedules. In return, she is willing to pay as much as she can afford, and also willing to teach cooking, as she is a great cook and has many excellent personal recipes.</p>
+      </div>
+      <div class="persona-text" id="persona-container-2">
+          <img class="persona-img" src="./../webpage-imgs/eggschange/persona2.jpg">
+          <h2>Eric Miller</h2>
+          <h3>Software Engineer</h3>
+          <p>Bernice is a retail salesperson. She has a flexible schedule and is eager to learn more graphic design skills to help her career development. She wishes to take some freelance jobs in her spare time and potentially become a graphic designer. However, she doesn’t have a lot of money to spare to pay for personal tutoring; and she finds online video courses ineffective, since there’s no feedback or suggestions. She is considering requesting lessons from her high school friends, some of whom are now graphic designers, but she isn’t sure how much free time they might have to teach her with their busy schedules. In return, she is willing to pay as much as she can afford, and also willing to teach cooking, as she is a great cook and has many excellent personal recipes.</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="text">
+      <div class="slides-text-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="slides-text">
+          <div class="scenario-text">
+            <h2>Bartering Scenario (Katie)</h2>
+            <p>Bernice, a retail salesperson, has been trying to learn about graphic design, but cannot afford to pay for professional classes. However, she is quite a talented cook and would be willing to teach cooking instead of necessarily a full class payment. Using TeachMe, Bernice is able to enter what classes she wants to take (graphic design) and what classes she can teach (cooking) and finds a good match, Sarah. Since Sarah is teaching a seven class graphic design program but Bernice’s cooking class is only four classes, Sarah and Bernice use TeachMe to barter such that Bernice teaches Sarah and only pays $50, well within Bernice’s budget. Using TeachMe, Bernice is able to finally begin to explore her interests and not go over her budget.
+            </p>
+          </div>
+        </div>
+        <div class="slides-text">
+          <div class="scenario-text">
+            <a data-featherlight href="./../webpage-imgs/eggschange/Storyboard-1.jpg">
+              <img src="./../webpage-imgs/eggschange/Storyboard-1.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="slides-text">
+          <div class="scenario-text">
+            <h2>Scheduling Scenario (Samson)</h2>
+            <p>Michael, a middle aged lawyer, has always wanted to learn about drawing; unfortunately, between his job and his young family, he has never been able to find the time to take a weekly class at the local community college, as his schedule changes based on the case he is working on that week. However, Michael discovers the app TeachMe, where he met Erica, an artist who teaches on TeachMe as a side gig. With the scheduling app in TeachMe, Michael is able to schedule classes week by week whenever he is free based on Erica’s availabilities and is finally able to learn how to draw.</p>
+          </div>
+        </div>
+        <div class="slides-text">
+          <div class="scenario-text">
+            <a data-featherlight href="./../webpage-imgs/eggschange/Storyboard-2.jpg">
+              <img src="./../webpage-imgs/eggschange/Storyboard-2.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="slides-text">
+          <div class="scenario-text">
+            <h2>Difficulty Level Scenario (Joyce)</h2>
+            <p>Mackenzie used to metalwork with her mother as a child, and now, as an adult, wants to get back into the art. However, whenever she looks for local or online classes, the classes are too introductory; Mackenzie more than once has signed up for a class only to realize that she knows the material already. However, she discovers TeachMe, where she finds Robert, a chemical engineer who metalworks in his free time. Although he also offers an intro class, Mackenzie sees that he is also offering an advanced class, which finally seems to cover some of the more advanced techniques she wanted to learn. Finally, Mackenzie is able to improve her skills in metalworking.</p>
+          </div>
+        </div>
+        <div class="slides-text">
+          <div class="scenario-text">
+            <a data-featherlight href="./../webpage-imgs/eggschange/Storyboard-3.jpg">
+              <img src="./../webpage-imgs/eggschange/Storyboard-3.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="slides-text">
+          <div class="scenario-text">
+            <h2>Class Reviews Scenario (Sarika)</h2>
+            <p>Philip is a retired pastry chef who often teaches and tutors for some extra income to supplement his retirement money. He has often run into the issue with several tutoring apps where his classes are posted next to an amateur baker; he feels like he could be getting a lot more business if potential students could see the difference in the quality of the class session. However, once he signed up on TeachMe, his classes are always filled, as his students have been sharing photos of the intricate desserts they are now able to create. His students also leave very positive ratings and comments, which has helped boost Philip’s business.</p>
+          </div>
+        </div>
+        <div class="slides-text">
+          <div class="scenario-text">
+            <a data-featherlight href="./../webpage-imgs/eggschange/Storyboard-4.jpg">
+              <img src="./../webpage-imgs/eggschange/Storyboard-4.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+ <hr class="separater">
+  <div class="text">
+  <h2>PROTOTYPING</h2>
+    <p>With our storyboards complete, we created a low fidelity navigation map to help plan out the user interaction with our application. We had some difficulty in figuring out the different processes for teachers and learners, but we quickly realized that the peer-to-peer aspect meant that the processes should be almost completely identical. This quick process of creating a navigation map helped us prepare for the next stage, wireframing.</p>
+  </div>
+
+
+<!--img gallery js-->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript">
+    //sets up slider1
+  $(document).ready(function(){
+    $('.slides-text-container').slick({
+      infinite: true,
+      dots: true,
+      speed: 300,
+      arrows: true});
+  });
+  </script>
+<!--    <hr class="separater">-->
+
+  
+<script type="text/javascript">
+    //sets up slider2
+  $(document).ready(function(){
+    $('.slides2-container').slick({
+      infinite: true,
+      dots: true,
+      speed: 300,
+      centerMode: true,
+      variableWidth: true,
+      arrows: true});
+    var height = $('.slides2-container img').height();
+    $(".initial-schemes").css("height", height);
+  });
+
+  </script>
+ 
+
+<!--DesignDiagrams + ProcessModels-->
+  <div class="text">
+    <h2 class="button"><a href="./../index.htm">Back to projects</a></h2>
+  </div>
+  <footer>
+    <p>&copy;Samson Liu, 2018, All rights reserved.</p>
+  </footer>
+
+<!--Final Plans and Sections-->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

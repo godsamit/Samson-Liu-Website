@@ -65,7 +65,13 @@ h1{
   text-align: center;
   width: 100%;
 }
-
+#title h3{
+  display: block;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
 
 /* Slideshow container */
 .slides1-container {
@@ -76,13 +82,15 @@ h1{
 }
 .slides2-container {
   display: inline-block;
-  width: 45%;
+  width: 49%;
   position: relative;
   margin: auto; 
   margin-top:20px;
   background: white;
 }
-
+.text-slide2{
+  max-height: 650px;
+}
 .initial-schemes {
   display: inline-block;
   position: relative;
@@ -171,7 +179,7 @@ h1{
   transition: .4s ease-in-out;
 }
 
-.slides1-container{
+.slides1-container, .slides-text-container{
   box-shadow: 2px 2px 5px #888888aa;
 }
 .slides2-container{
@@ -185,5 +193,84 @@ h1{
 }
 
 .text .button a{
-  color:#eb652d;
+  text-decoration: none;
+}
+
+.text a{
+  color: #eb652d;
+  text-decoration: underline;
+}
+
+
+.tightImgRow img{
+  height: 200px !important;
+  max-width: 18%;
+  object-fit: cover;
+  margin-right:5px;
+}
+
+.persona-img{
+  display:inline-block !important;
+  width: 46%;
+  height: auto !important;
+  vertical-align: top;
+  object-fit: cover;
+  float:left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.persona-text{
+  height: auto;
+  vertical-align: top;
+  background: #e1e1e1;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.scenario-text{
+  height: 38%;
+  vertical-align: top;
+  background: #e1e1e1;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.persona-text h2, .persona-text h3, .persona-text p, 
+.scenario-text h2{
+  margin: 0;
+  color: black;
+}
+.persona-text h2,
+.scenario-text h2{
+  font-size:20px;
+}
+.persona-text h3{
+  letter-spacing:1px;
+  font-size:16px;
+}
+.persona-text p,
+.scenario-text p{
+  font-size: 14px;
+}
+
+::-webkit-scrollbar { width: 5px !important; margin-right: 25px; }
+::-webkit-scrollbar-track { background: #e1e1e1; }
+::-webkit-scrollbar-thumb { background: #ddd; }
+::-webkit-scrollbar-thumb:hover { background: #eb652d8f; }
+
+iframe{
+  width: 100%;
+  height: 70%;
+}
+
+.slides-text-container{
+  margin-top: 25px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.scenario-text img{
+  margin:auto;
+  height:100% !important;
 }

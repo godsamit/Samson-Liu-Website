@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="styles/base-style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="./scripts/velocity.min.js"></script>
   <script src="./scripts/isotope.pkgd.min.js"></script> 
   <script src="./scripts/packery-mode.pkgd.min.js"></script>
   </head>
@@ -66,16 +65,16 @@
             <div class="img" style="background-image:url('project-icons/ecs.png')" title="ECS"></div>
             <div class ="overlay">
               <h5 class="name">ECS</h5>
-              <p class="time ascending">2017</p>
+              <p class="time ascending">2017.5</p>
             </div>
           </a>
         </div>
         <div class="container hci">
-          <a href="works/hci-user-study.htm">
-            <div class="img" style="background-image: url('project-icons/hci-user-study.png')" title="HCI-User-Study"></div>
+          <a href="works/tool-lending-user-study.htm">
+            <div class="img" style="background-image: url('project-icons/hci-user-study.png')" title="Tool-Lending-User-Study"></div>
             <div class ="overlay">
-              <h5 class="name">HCI User Study</h5>
-              <p class="time ascending">2018</p>
+              <h5 class="name">Tool Lending User Study</h5>
+              <p class="time ascending">2018.3</p>
             </div>
           </a>
         </div>
@@ -84,7 +83,7 @@
             <div class="img" style="background-image: url('project-icons/eggschange.png')" title="Eggschange"></div>
             <div class ="overlay">
               <h5 class="name">Eggschange</h5>
-              <p class="time ascending">2018</p>
+              <p class="time ascending">2018.4</p>
             </div>
           </a>
         </div>
@@ -93,7 +92,7 @@
             <div class="img" style="background-image: url('project-icons/aqua-pavilion.png')" title="Aqua Pavilion"></div>
             <div class ="overlay">
               <h5 class="name">Aqua Pavilion</h5>
-              <p class="time ascending">2016</p>
+              <p class="time ascending">2016.5</p>
             </div>
           </a>
         </div>
@@ -102,7 +101,7 @@
             <div class="img" style="background-image: url('project-icons/downtown-cafe.png')" title="Downtown Cafe"></div>
             <div class ="overlay">
               <h5 class="name">Downtown Cafe</h5>
-              <p class="time ascending">2017</p>
+              <p class="time ascending">2017.5</p>
             </div>
           </a>
         </div>
@@ -111,7 +110,7 @@
             <div class="img" style="background-image: url('project-icons/50-diagrams.png')" title="Drawings"></div>
             <div class ="overlay">
               <h5 class="name">Drawings</h5>
-              <p class="time ascending">2015</p>
+              <p class="time ascending">2015.3</p>
             </div>
           </a>
         </div>
@@ -120,7 +119,7 @@
             <div class="img" style="background-image: url('project-icons/span.png')" title="Span"></div>
             <div class ="overlay">
               <h5 class="name">Span</h5>
-              <p class="time ascending">2015</p>
+              <p class="time ascending">2015.5</p>
             </div>
           </a>
         </div>
@@ -129,7 +128,7 @@
             <div class="img" style="background-image: url('project-icons/hunt-canopy.png')" title="Hunt Canopy"></div>
             <div class ="overlay">
               <h5 class="name">Hunt Canopy</h5>
-              <p class="time ascending">2015</p>
+              <p class="time ascending">2015.4</p>
             </div>
           </a>
         </div>
@@ -138,7 +137,7 @@
             <div class="img" style="background-image: url('project-icons/mean-image.png')" title="Mean Inage"></div>
             <div class ="overlay">
               <h5 class="name">Mean Images</h5>
-              <p class="time ascending">2018</p>
+              <p class="time ascending">2018.5</p>
             </div>
           </a>
         </div>
@@ -147,7 +146,7 @@
               <div class="img" style="background-image: url('project-icons/smoke-and-mirror.png')" title="Smoke and Mirror"></div>
               <div class ="overlay">
               <h5 class="name">Smoke and Mirror</h5>
-              <p class="time ascending">2018</p>
+              <p class="time ascending">2018.6</p>
               </div>
             </a>
         </div>
@@ -202,8 +201,8 @@
         layoutMode: 'fitRows',
         getSortData:{
           name: '.name',
-          time: '.time parseInt',
-          ascending: '.time parseInt'
+          time: '.time parseFloat',
+          ascending: '.time parseFloat'
         },
         sortAscending: {
           name: true,
@@ -234,7 +233,10 @@
           $( this ).addClass('is-checked');
         });
       });
-      $('.gallery').isotope({ sortBy: 'time' });
+      $( document ).ready(function(){
+        $('.gallery').isotope({ sortBy: 'time' });
+      });
+      
     </script>
   </body>
 </html>
