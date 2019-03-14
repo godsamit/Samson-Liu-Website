@@ -237,7 +237,7 @@ h1{
 }
 
 .persona-text h2, .persona-text h3, .persona-text p, 
-.scenario-text h2{
+.scenario-text h2, .scenario-text p {
   margin: 0;
   color: black;
 }
