@@ -10,11 +10,15 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./scripts/isotope.pkgd.min.js"></script> 
   <script src="./scripts/packery-mode.pkgd.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header role="banner">
       <a href="#"><h1>Samson Liu</h1></a>
     <nav id="main" role="navigation">
+      <a id="sidebarButton" onclick="toggleSideBar()" href="#">
+        ☰
+      </a>
       <h3>
         <a class="one is-checked" href="#">
           Work</a>
@@ -30,6 +34,23 @@
       </h3>
     </nav>
     </header>
+    <script>
+      var SIDEBAR_ON;
+      $(document).ready(function(){
+        SIDEBAR_ON = false;
+      });
+      function toggleSideBar(){
+        if (SIDEBAR_ON){
+          $("#sidebarButton").css("color","#eb652d");
+          $("nav").animate({right:"-180px"},600);
+        }
+        else{
+          $("#sidebarButton").css("color", "#fff" );;
+          $("nav").animate({right:"0px"},600)
+        }
+        SIDEBAR_ON = !SIDEBAR_ON;
+      }
+    </script>
       
     <section id="filter-sort">
       <div class="filters buttons">

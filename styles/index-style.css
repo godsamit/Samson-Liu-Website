@@ -1,5 +1,3 @@
-
-
 /* filters 
 --------------------- */
 
@@ -33,29 +31,34 @@
 
 /*Work Gallery Layout
 ---------------------------*/
+
+
 main{
   margin: 0;
 }
 
-article{
-  margin-top: 18;
+.gallery{
+  margin: 18px auto;
 }
-
-article.wrapper{
-  max-width: 88%;
-  margin: 0, auto;
-}
-
 .container{
   background: lightyellow;
-  width:200px;
-  height:200px;
-  margin: 0 16 16 0;
+  width:33vw;
+  height:33vw;
+      margin: 0 5 5 0;
   display: inline-block;
   position: relative;
   overflow: visible;
   background-size: cover;
   background-position: center center;
+}
+/*.container:nth-child()*/
+@media screen and (min-width: 600px){
+  .container{
+    background: lightyellow;
+    width:200px;
+    height:200px;
+    margin: 0 16 16 0;
+  }
 }
 
 .container .img{

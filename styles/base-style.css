@@ -34,62 +34,110 @@ body {
 /*"Samson Liu, Designer"
 ------------------------*/
 header{
-  display: flex;
+  display: block;
   justify-content: space-between;
-  position:relative;
   line-height: 4em;
   padding-top: 5%;
+  width:100%;
 }
-h1 {
+
+@media screen and (min-width: 600px){
+  header{
+    position:relative;
+    height:auto;
+    width: 100%;
+/*    top: 15px*/
+  }
+}
+
+h1{
   display: inline;
   font-family: "Bebas Book", serif;
-  font-size: 2.5em;
+  font-size: 3em;
   letter-spacing: 5px;
   color: #eb652d;
   margin: 0;
-  position:absolute;
-  left: 0;
-  bottom:0;
-  width: 190;
+
+  width: 500;
 }
 
+@media screen and (min-width: 600px){
+  h1 {
+    position:absolute;
+    left: 0;
+    bottom:0;
+    width: 500;
+  }
+}
 
 nav{
-  display: inline;
   font-family: "Bebas Light";
-  position:absolute;
-  left: 230px;
-  bottom:-0.5em;
+  background-color: #eb652d;
+  height: 100%;
+  position: fixed;
+  width: 150px;
+  padding-right: 30px;
+  right: -180px;
+  top: 0;
+  text-align: right;
+  padding-top: 30%;
+  z-index: 3;
 }
 
+@media screen and (min-width: 600px){
+  nav{
+    width: auto;
+    padding: 0;
+    text-align: left;
+    display: inline;
+    position:absolute;
+    height: 64px;
+    background: transparent; 
+    left: 250px;
+    top: auto;
+    bottom:-0.5em;
+  }
+}
 nav h3{
-  display: inline;
-  font-weight: 400 !important;
-  letter-spacing: 3px;
-  margin-right: 20;
-  font-size: 1em;
-  padding-bottom: 0;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 600px){
+  nav h3{
+    display: inline;
+    font-weight: 400 !important;
+    letter-spacing: 3px;
+    margin-right: 20;
+    font-size: 1em;
+    padding-bottom: 0;
+  }
 }
 
 nav h3 a{
-  color:#aaa;
-  text-decoration: none;
+  color: white;
 }
-
 nav h3 a.is-checked{
-  color:#eb652d8f;
-  text-decoration: none;
-  font-weight: 600;
+  text-decoration: underline;
 }
+@media screen and (min-width: 600px){
+  nav h3 a{
+    color:#aaa;
+    text-decoration: none;
+  }
 
-nav h3 a:hover{
-  font-weight: 800;
-  color: #eb652d;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
+  nav h3 a.is-checked{
+    color:#eb652d8f;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
-h3 a:before {
+  nav h3 a:hover{
+    font-weight: 800;
+    color: #eb652d;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  h3 a:before {
   content: "";
   position: absolute;
   height: 2px;
@@ -100,50 +148,48 @@ h3 a:before {
   transform: scaleX(0);
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  }
+
+  nav h3:nth-child(2) a:before {
+    width: 45px;
+    left: -3px;
+  }
+  nav h3:nth-child(3) a:before {
+    width: 50px;
+    left:63px;
+  }
+  nav h3:nth-child(4) a:before {
+    width: 69px;
+    left: 133px;
+  }
+
+  h3 a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+#sidebarButton{
+  color: #eb652d;
+  position:fixed;
+  top:4.5vh;
+  right:35px;
+  font-size: 3em;
+  z-index: 5;
+  -webkit-transition: color 0.6s ease;
+  -moz-transition: color 0.6s ease;
+  -o-transition: color 0.6s ease;
+  transition: color 0.6s ease;
+}
+
+@media screen and (min-width: 600px){
+  #sidebarButton{
+    display: none;
+  }
 }
 
 
-nav h3:nth-child(1) a:before {
-  width: 23%;
-  height: 2px;
-  left: -2%;
-}
-nav h3:nth-child(2) a:before {
-  width: 25%;
-  height: 2px;
-  left: 31%;
-}
-nav h3:nth-child(3) a:before {
-  width: 35%;
-  height: 2px;
-  left: 66%;
-}
-
-h3 a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-nav h3:last-child{
-  margin-right: 0;
-}
-.one:hover ~ hr {
-  margin-left: 25%;
-}
-
-.three:hover ~ hr {
-  margin-left: 66%;
-}
-
-hr {
-  height: .25rem;
-  width: 33%;
-  margin: 33%;
-  background: tomato;
-  border: none;
-  transition: .4s ease-in-out;
-}
 
 /*Contact and About*/
 
@@ -151,12 +197,17 @@ hr {
 -------------------------*/
 button{
   font-family: "Bebas Light", serif;
-  font-size: .85em;
+  font-size: 4.5vw;
+}
+@media screen and (min-width: 600px){
+  button{
+    font-size: .85em;
+  }
 }
 
 .button {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px;
   background: #fff;
   border: 1px #ddd solid;
   color: #555;
@@ -165,7 +216,11 @@ button{
   cursor: pointer;
   line-height: 1em;
 }
-
+@media screen and (min-width: 600px){
+  .button{
+    padding: 5px 10px;
+  }
+}
 .button:hover {
   border-color: rgba(237,101, 45, 0.8);
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
@@ -203,11 +258,14 @@ button{
 header{
   margin:3.5% 10% 20 ;
 }
-
 section{
-   margin: 0 2% 1% 10%;
+  margin:0 10% 1% 10%;
 }
-
+@media screen and (min-width: 600px){
+  section{
+     margin: 0 2% 1% 10%;
+  }
+}
 
 h2{
   font-family: "Bebas Light";
@@ -222,15 +280,29 @@ section div{
 }
 
 section .sorters{
-  margin-left: 15px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 600px){
+  section .sorters{
+    margin-top: auto;
+    margin-left: 15px;
+  }
 }
 
 /*footer*/
 footer{
   font-family: "HelveticaNeue Light", serif;
   color:#555;
-  text-align: center;
-  margin-top: 5%;
+  margin-left: 10%;
+  text-align: left;
+}
+@media screen and (min-width: 600px){
+  footer{
+
+    text-align: center;
+    margin-left: auto;
+    margin-top: 5%;
+  }
 }
 
 footer p{
