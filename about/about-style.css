@@ -1,18 +1,25 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 480px 300px;
-  grid-template-areas:
-    'a b c'
-    'a d e';
-  grid-gap: 0;
-  background-color: transparent;
-  padding: 0px;
+
+.grid-container{
+  display: block;
+}
+
+@media screen and (min-width: 600px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: 300px 480px 300px;
+    grid-template-areas:
+      'a b c'
+      'a d e';
+    grid-gap: 0;
+    background-color: transparent;
+    padding: 0px;
+  }
 }
 
 .headshot{
   display: block;
-  height: 300px;
-  width: 300px;
+  width: 100%;
+  padding-top: 100%;
   float: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -24,12 +31,18 @@
   font-family: 'Montserrat', sans-serif;
   font-size: .8em;
   position:relative;
-  width: 91%;
+  width: 100%;
   line-height:1.5em;
   display: inline-block;
-  margin-left: 50px;
-  margin-top: 0;
+  margin-top: 30px;
   vertical-align: top;
+}
+@media screen and (min-width: 600px){
+  .bio p{
+    margin-left: 50px;
+    margin-top: 0;
+    width: 91%;
+  }
 }
 
 .bio ul li{
@@ -39,23 +52,17 @@
   position:relative;
   width: 91%;
   line-height:1.5em;
-  display: inline-block;
-  margin-left: 50px;
+  display: list-item;
+  margin-left: 0px;
   margin-top: 0;
   vertical-align: top;
 }
-
-.bio ul li{
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
-  font-size: .8em;
-  position:relative;
-  width: 91%;
-  line-height:1.5em;
-  display: inline-block;
-  margin-left: 50px;
-  margin-top: 0;
-  vertical-align: top;
+@media screen and (min-width: 600px){
+  .bio ul li{
+    width: 91%;
+    line-height:1.5em;
+    margin-left: 50px;
+  }
 }
 
 .bio .about-me::before{
@@ -94,7 +101,14 @@ h3{
 }
 .links{
   display: block;
-  margin-left: 50px;
+  margin-left: 0px;
   margin-top: 25px;
 }
-
+        
+@media screen and (min-width: 600px){
+  .links{
+    display: block;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+}

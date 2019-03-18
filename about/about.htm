@@ -11,41 +11,61 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./../scripts/isotope.pkgd.min.js"></script>
   <script src="./../scripts/packery-mode.pkgd.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="./../faviconit/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="./../faviconit/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="./../faviconit/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="./../faviconit/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../faviconit/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="./../faviconit/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../faviconit/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../faviconit/favicon-16.png">
+  <link rel="apple-touch-icon" href="./../faviconit/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../faviconit/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../faviconit/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./../faviconit/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./../faviconit/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./../faviconit/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./../faviconit/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./../faviconit/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../faviconit/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
+  <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
   </head>
   <body>
-    <header role="banner">
+   <header role="banner">
       <a href="./../index.htm"><h1>Samson Liu</h1></a>
-
     <nav id="main" role="navigation">
-      <a id="sidebarButton" href="#">
+      <a id="sidebarButton" onclick="toggleSideBar()">
         ☰
       </a>
       <h3>
-        <a class="one is-checked" href="./../index.htm">
+        <a class="one" href="./../index.htm#">
           Work</a>
       </h3>
       <h3>
-        <a class="two" href="#">
+        <a class="two is-checked" href="#">
           About</a>
       </h3>
       <h3>
-        <a class="three" href="./contact/contact.htm">
+        <a class="three" href="./contact/contact.htm#">
           Contact
         </a>
       </h3>
     </nav>
     </header>
-    <section id="barba-wrapper"class="bio">
-      <div class="barba-container grid-container">
-        <span class="headshot"></span>
-        <span>
+    <script src="./../scripts/sidebar.js"></script>
+    <section class="bio">
+      <div class="grid-container">
+        <div class="headshot"></div>
+        <div>
         <p class="about-me">
           Hello there! My name is Samson and I'm a 5th-year architecture student at Carnegie Mellon University, minoring in Human Computer Interaction.<br><br>      
           My education has prepared me for designing through various interfaces, from physical to virtual, analog to digital. I am interested in the possibilities of using virtual information to strengthen but also challenge one's spatial perception. Right now, I am developing an Augmented Reality app for CMU's School of Architecture in a development team. Concorrently, I am also pursuing a year-long thesis about spatial design in VR, which will be on the website soon.<br><br>
           I utilize my free time to pursue my passions. I taught himself several coding languages, various designing and modeling softwares, as well as digital music production. <br>
-        </p></span>
-        <span>
+        </p></div>
+        <div>
         <p class="about-site">
           This website is the first iteration of many that's about to come. Right now it's a static website hosted on Github Pages. I will keep a log of updates in future versions.<br>
           Right now on my mind:
@@ -56,19 +76,19 @@
             <li>Embeded media</li>
           </ul>
           <p>Stay tuned!<br><br>      
-        </p></span>
+        </p></div>
 <!--to keep the grid in place-->
-        <span></span>
+        <div></div>
 <!--to keep the grid in place-->
-        <span class="links">
+        <div class="links">
           <h3>Resumes:</h3>
             <h4 class="button"><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" download="SamsonResume" target="_blank">architecture</a></h4>
             <h4 class="button"><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" download="SamsonResume" target="_blank">UI/UX</a></h4>
-        </span>
-        <span class="links">
+        </div>
+        <div class="links">
           <h3>code:</h3>
           <h4 class="button"><a href="SamsonLiuResume%20-%20Architecture.pdf" title="Samson_Resume" target="_blank">github repo</a></h4>
-        </span>
+        </div>
       </div>
     </section>
     <footer>

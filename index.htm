@@ -10,13 +10,33 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./scripts/isotope.pkgd.min.js"></script> 
   <script src="./scripts/packery-mode.pkgd.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="faviconit/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="faviconit/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="faviconit/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="faviconit/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="faviconit/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="faviconit/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="faviconit/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="faviconit/favicon-16.png">
+  <link rel="apple-touch-icon" href="faviconit/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="faviconit/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="faviconit/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="faviconit/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="faviconit/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="faviconit/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="faviconit/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="faviconit/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="faviconit/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="faviconit/favicon-144.png">
+  <meta name="msapplication-config" content="faviconit/browserconfig.xml">
   </head>
   <body>
     <header role="banner">
       <a href="#"><h1>Samson Liu</h1></a>
     <nav id="main" role="navigation">
-      <a id="sidebarButton" onclick="toggleSideBar()" href="#">
+      <a id="sidebarButton" onclick="toggleSideBar()">
         ☰
       </a>
       <h3>
@@ -24,33 +44,17 @@
           Work</a>
       </h3>
       <h3>
-        <a class="two" href="./about/about.htm">
+        <a class="two" href="./about/about.htm#">
           About</a>
       </h3>
       <h3>
-        <a class="three" href="./contact/contact.htm">
+        <a class="three" href="./contact/contact.htm#">
           Contact
         </a>
       </h3>
     </nav>
     </header>
-    <script>
-      var SIDEBAR_ON;
-      $(document).ready(function(){
-        SIDEBAR_ON = false;
-      });
-      function toggleSideBar(){
-        if (SIDEBAR_ON){
-          $("#sidebarButton").css("color","#eb652d");
-          $("nav").animate({right:"-180px"},600);
-        }
-        else{
-          $("#sidebarButton").css("color", "#fff" );;
-          $("nav").animate({right:"0px"},600)
-        }
-        SIDEBAR_ON = !SIDEBAR_ON;
-      }
-    </script>
+    <script src="./scripts/sidebar.js"></script>
       
     <section id="filter-sort">
       <div class="filters buttons">
@@ -62,91 +66,91 @@
       
       <div class="sorters buttons">
           <button class="button is-checked" data-sort-by="time">
-            Time <em>⭣</em></button>
+            Time &#9660</button>
           <button class="button" data-sort-by="ascending">
-            Time <em>⭡</em></button>
-        <button class="button" data-sort-by="name">Name <em>⭡</em></button>
+            Time &#9650</button>
+        <button class="button" data-sort-by="name">Name &#9650</button>
       </div>
     </section>
     
-    <section id="barba-wrapper">
-    <main class="barba-container">
+    <section>
+    <main>
       <article class="gallery">
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/threads.htm">
-            <div class="img" style="background-image: url('project-icons/threads.png')" title="Threads"></div>
+            <div class="img" style="background-image: url('project-icons/threads.png')" onclick="" title="Threads"></div>
             <div class ="overlay">
               <h5 class="name">Threads</h5>
               <p class="time ascending">2017</p>
             </div>
           </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/ecs.htm">
-            <div class="img" style="background-image:url('project-icons/ecs.png')" title="ECS"></div>
+            <div class="img" style="background-image:url('project-icons/ecs.png')" onclick="" title="ECS"></div>
             <div class ="overlay">
               <h5 class="name">ECS</h5>
               <p class="time ascending">2017.5</p>
             </div>
           </a>
         </div>
-        <div class="container hci">
+        <div class="container hci" onclick="">
           <a href="works/tool-lending-user-study.htm">
-            <div class="img" style="background-image: url('project-icons/hci-user-study.png')" title="Tool-Lending-User-Study"></div>
+            <div class="img" style="background-image: url('project-icons/hci-user-study.png')" onclick="" title="Tool-Lending-User-Study"></div>
             <div class ="overlay">
               <h5 class="name">Tool Lending User Study</h5>
               <p class="time ascending">2018.3</p>
             </div>
           </a>
         </div>
-        <div class="container hci">
+        <div class="container hci" onclick="">
           <a href="works/eggschange.htm">
-            <div class="img" style="background-image: url('project-icons/eggschange.png')" title="Eggschange"></div>
+            <div class="img" style="background-image: url('project-icons/eggschange.png')" onclick="" title="Eggschange"></div>
             <div class ="overlay">
               <h5 class="name">Eggschange</h5>
               <p class="time ascending">2018.4</p>
             </div>
           </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/aqua-pavilion.htm">
-            <div class="img" style="background-image: url('project-icons/aqua-pavilion.png')" title="Aqua Pavilion"></div>
+            <div class="img" style="background-image: url('project-icons/aqua-pavilion.png')" onclick="" title="Aqua Pavilion"></div>
             <div class ="overlay">
               <h5 class="name">Aqua Pavilion</h5>
               <p class="time ascending">2016.5</p>
             </div>
           </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/downtown-cafe.htm">
-            <div class="img" style="background-image: url('project-icons/downtown-cafe.png')" title="Downtown Cafe"></div>
+            <div class="img" style="background-image: url('project-icons/downtown-cafe.png')" onclick="" title="Downtown Cafe"></div>
             <div class ="overlay">
               <h5 class="name">Downtown Cafe</h5>
               <p class="time ascending">2017.5</p>
             </div>
           </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/drawings.htm">
-            <div class="img" style="background-image: url('project-icons/50-diagrams.png')" title="Drawings"></div>
+            <div class="img" style="background-image: url('project-icons/50-diagrams.png')" onclick="" title="Drawings"></div>
             <div class ="overlay">
               <h5 class="name">Drawings</h5>
               <p class="time ascending">2015.3</p>
             </div>
           </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/span.htm">
-            <div class="img" style="background-image: url('project-icons/span.png')" title="Span"></div>
+            <div class="img" style="background-image: url('project-icons/span.png')" onclick="" title="Span"></div>
             <div class ="overlay">
               <h5 class="name">Span</h5>
               <p class="time ascending">2015.5</p>
             </div>
           </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/hunt-canopy.htm">
-            <div class="img" style="background-image: url('project-icons/hunt-canopy.png')" title="Hunt Canopy"></div>
+            <div class="img" style="background-image: url('project-icons/hunt-canopy.png')" onclick="" title="Hunt Canopy"></div>
             <div class ="overlay">
               <h5 class="name">Hunt Canopy</h5>
               <p class="time ascending">2015.4</p>
@@ -154,26 +158,26 @@
           </a>
         </div>
         <div class="container hci">
-          <a href="works/mean-image.htm">
-            <div class="img" style="background-image: url('project-icons/mean-image.png')" title="Mean Inage"></div>
+          <a href="works/mean-image.htm" onclick="">
+            <div class="img" style="background-image: url('project-icons/mean-image.png')" onclick="" title="Mean Inage"></div>
             <div class ="overlay">
               <h5 class="name">Mean Images</h5>
               <p class="time ascending">2018.5</p>
             </div>
           </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
             <a href="works/smoke-and-mirror.htm">
-              <div class="img" style="background-image: url('project-icons/smoke-and-mirror.png')" title="Smoke and Mirror"></div>
+              <div class="img" style="background-image: url('project-icons/smoke-and-mirror.png')" onclick="" title="Smoke and Mirror"></div>
               <div class ="overlay">
               <h5 class="name">Smoke and Mirror</h5>
               <p class="time ascending">2018.6</p>
               </div>
             </a>
         </div>
-        <div class="container architecture">
+        <div class="container architecture" onclick="">
           <a href="works/materials-and-assembly.htm">
-            <div class="img" style="background-image: url('project-icons/material-and-assembly.png')" title="Material and Assembly"></div>
+            <div class="img" style="background-image: url('project-icons/material-and-assembly.png')" onclick="" title="Material and Assembly"></div>
             <div class ="overlay">
               <h5 class="name">Materials and Assembly</h5>
               <p class="time ascending">2016</p>
