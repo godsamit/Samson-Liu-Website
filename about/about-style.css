@@ -29,7 +29,7 @@
 .bio p{
   text-align: left;
   font-family: 'Montserrat', sans-serif;
-  font-size: .8em;
+  font-size: 1em;
   position:relative;
   width: 100%;
   line-height:1.5em;
@@ -42,13 +42,14 @@
     margin-left: 50px;
     margin-top: 0;
     width: 91%;
+    font-size: .8em;
   }
 }
 
 .bio ul li{
   text-align: left;
   font-family: 'Montserrat', sans-serif;
-  font-size: .8em;
+  font-size: 1em;
   position:relative;
   width: 91%;
   line-height:1.5em;
@@ -60,6 +61,7 @@
 @media screen and (min-width: 600px){
   .bio ul li{
     width: 91%;
+    font-size: .8em;
     line-height:1.5em;
     margin-left: 50px;
   }
