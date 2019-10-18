@@ -3,18 +3,39 @@
   <head>
   <meta charset="utf-8">
   <meta content="Portfolio of Samson Liu">
-  <title>Samson Liu, Designer </title>
-  <link rel="stylesheet" href="./../styles/base-style.css">
-  <link rel="stylesheet" href="./about-style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+  <title>Downtown Cafe</title>
+  <link href="./../styles/slick.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="./../../scripts/isotope.pkgd.min.js"></script>
-  <script src="./../../scripts/velocity.min.js"></script>
-  <script src="./../../scripts/jQuery.smoothState.min.js"></script>
-  <script src="./../../scripts/packery-mode.pkgd.min.js"></script>
+
+  <link rel="stylesheet" href="./../styles/base-style.css">
+  <link rel="stylesheet" href="./../styles/works-style.css">
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="./../faviconit/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="./../faviconit/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="./../faviconit/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="./../faviconit/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../faviconit/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="./../faviconit/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../faviconit/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../faviconit/favicon-16.png">
+  <link rel="apple-touch-icon" href="./../faviconit/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../faviconit/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../faviconit/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./../faviconit/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./../faviconit/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./../faviconit/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./../faviconit/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./../faviconit/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../faviconit/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
+  <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
   </head>
   <body>
+<!--
     <header role="banner">
       <a href="./../../index.htm"><h1>Samson Liu</h1></a>
     <nav role="navigation">
@@ -29,7 +50,184 @@
       </h3>
     </nav>
     </header>
+-->
+<!--header img-->
+  <div class="header-img" style="background: 
+  url('./../webpage-imgs/downtown-cafe/MainView.png'); 
+  background-size: cover;
+  background-position: center;">
+    <div class="gradient1"></div>
+    <div class="gradient2"></div>
+    <h2 class="centered">Downtown Cafe</h2>
+  </div>
 
-    <script src="scripts.js"></script>
+<!--main content-->
+  <div id="title">
+    <h1>DESIGNING HYBRID WORKFLOW</h1>
+    <h3>Project Date: 2017 Fall TA | Individual</h3>
+  </div>
+
+<!--img gallery js-->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript">
+    //sets up slider1
+  $(document).ready(function(){
+    $('.slides1-container').slick({
+      infinite: true,
+      dots: true,
+      speed: 300,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 2000});
+  });
+  </script>
+<!--    <hr class="separater">-->
+  <div class="text">
+    <a href="./../webpage-imgs/downtown-cafe/Final-Submission.jpg" data-featherlight>
+      <img style="width:100%; margin-bottom:15px;" src="./../webpage-imgs/downtown-cafe/Final-Submission.jpg">
+    </a>
+    <h2>DESIGNING AN ASSIGNMENT</h2>
+    <p>This is one of the projects I took on as a teaching assistant to the first-year digital media class, where I did the <a href="./hunt-canopy.htm">Hunt Canopy</a> Project</p>
+    <p>For this project, the professor is interested in using a hybrid workflow, mixing analog and digital media, to teach diagramming and basic Photoshop techniques through a small-scale design project. I was responsible for site selection and documentation. After some discussion about the programs and deliverables, I was then solely responsible to create 2 sets of in-class tutorial slides and sample submission.</p>
+    <p>The assignment task is to design a bookstore/cafe/office building in downtown Pittsburgh. Students were expected to analyze the site and come up with 2 fundamentally different schemes. Students should use a mixture of handdrawn and digital media to quickly generate diagrams and renders. For the 3d view specifically, students were expected to match the rhino viewport to given photos, then export and trace over, and render the view.</p>
+    <p>After discussing the grading rubrics, I did the assignment myself and documented each step. I made the in-class slides, which consists of assignment clearifications, concept explanations and step-by-step tutorials.</p>
+  </div>
+
+<!--SiteAnalysis + InitialSchemes-->
+  <div class="text text-slide2">
+    <div class="slides2-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_01.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_01.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_02.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_02.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="#" data-featherlight="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_04.jpg">
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_04.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_06.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_06.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_08.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_08.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_09.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_09.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_11.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_11.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_12.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_12.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_21.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_21.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_23.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_23.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_25.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_25.jpg">
+        </a>
+      </div>
+    </div>
+    <div class="slides2-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_01.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_01.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_02.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_02.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_12.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_12.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_13.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_13.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_16.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_16.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_18.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_18.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/tdowntown-cafe/Hybrid Workflow II_Page_19.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_19.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/tdowntown-cafe/Hybrid Workflow II_Page_20.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_20.jpg">
+        </a>
+      </div>
+      <div class="slides2">
+        <a href="./../webpage-imgs/tdowntown-cafe/Hybrid Workflow II_Page_22.jpg" data-featherlight>
+          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_22.jpg">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    //sets up slider2
+  $(document).ready(function(){
+    $('.slides2-container').slick({
+      infinite: true,
+      dots: true,
+      speed: 300,
+      centerMode: true,
+      lazyLoad: 'ondemand',
+      variableWidth: true,
+      arrows: true});
+    var height = $('.slides2-container img').height();
+    $(".initial-schemes").css("height", height);
+  });
+  </script>
+  <div class="text">
+    <h2 class="button"><a href="./../index.htm">Back to projects</a></h2>
+  </div>
+  <footer>
+    <p>&copy;Samson Liu, 2018, All rights reserved.</p>
+  </footer>
+
+<!--Final Plans and Sections-->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
