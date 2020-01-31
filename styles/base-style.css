@@ -323,7 +323,11 @@ a{
   color: #555;
   text-decoration: none;
 }
-
+em{
+  color: #eb652d;
+  font-weight: bold;
+  font-style: normal;
+}
 footer p a{
   text-decoration: underline;
 }

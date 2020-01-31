@@ -7,8 +7,9 @@
   <link href="./../styles/slick.css" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./../scripts/isotope.pkgd.min.js"></script>
+
   <link rel="stylesheet" href="./../styles/base-style.css">
   <link rel="stylesheet" href="./../styles/works-style.css">
   <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
@@ -34,6 +35,7 @@
   <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
   <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
   </head>
+
   <body>
 <!--
     <header role="banner">
@@ -66,32 +68,56 @@
   <h1>EVERYONE'S A TEACHER</h1>
   <h3>Project Date: 2018 Spring | Collaborative</h3>
   </div>
-    
+  <div class="slides1-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="slides1">
+      <a data-featherlight href="./../webpage-imgs/threads/View-2.png">
+        <img src="./../webpage-imgs/eggschange/Eggschange-isometric.jpg">
+      </a>
+    </div>
+    <div class="slides1">
+      <a href="./../webpage-imgs/threads/View-1.png" data-featherlight>
+        <img src="./../webpage-imgs/eggschange/mockup-3.jpg">
+      </a>
+    </div>
+    <div class="slides1">
+      <a href="./../webpage-imgs/threads/View-4.png" data-featherlight>
+        <img src="./../webpage-imgs/eggschange/mockup-2.jpg">
+      </a>
+    </div>
+    <div class="slides1">
+      <a href="./../webpage-imgs/threads/View-3.png" data-featherlight>
+        <img src="./../webpage-imgs/eggschange/mockup-1.jpg">
+      </a>
+    </div>
+  </div>
   <hr class="separater">
   <div class="text">
   <h2>INTENT</h2>
   <div>
-    <p>In this project, our team developed a mobile application prototype for peer-to-peer teaching. At the start of the project, we analyzed the research data from another team who already did market research and interviews in the relevant field. After going over the research data, and conducting some additional interviews, we decided that the most important problems that our app needs to adress are:<br><br>
-    <span class="li">1. Improving mutual trust between teachers and students.</span>
-    <span class="li">2. Incentivizing individual teachers to offer classes to their peers.</span>
-    <span class="li">3. Verifying teacher expertise and appealing to users of all difficulty and experience levels.</span><br>
+    <p>In this project, our team developed a <b>mobile application prototype</b> for <b>peer-to-peer teaching</b>. In this app, other than the conventional monetary payment, students can also pay for lessons by teaching back. <br><br>
+      This assignment was a second part to a previous project in which we were assigned different prompts to conduct <a href="tool-lending-user-study.htm">primary user/market research</a>. Each group then switched their research packets with another group to continue the app prototyping. After going over the research data, and conducting some additional interviews, we decided that our <b>three main goals</b> are:<br><br>
+      <span class="li">1. Improving <em>mutual trust</em> between teachers and students. In real life, mutual teaching happens mostly <b>among friends</b>. We have to build on that to make the idea work with a lot of users.</span>
+      <span class="li">2. Encouraging people to <em>verify and prove their expertise</em>. People are more willing to learn from a stranger, if he/she is very <b>knowledgable</b>. </span>
+      <span class="li">3. Incentivizing individuals to <em>accept lessons as a payment</em>. It is to be expected that most people would want to receive real money. But we hope to bring our own impact and promote a community that encourages mutual teaching for people from all backgrounds.</span><br>
     After going through this process of synthesizing the problem space of peer-to-peer teaching, we quickly generated and merged personas and scenarios to illustrate our findings, and to help move forward with the design process.</p>
   </div>
     <div></div>
     <div class="tightImgRow">
-      <a data-featherlight href="./../webpage-imgs/eggschange/ResearchJourney.png">
+      <a data-featherlight href="./../webpage-imgs/eggschange/ResearchJourney.png" class="img_1_1">
         <img src="./../webpage-imgs/eggschange/ResearchJourney.png">
       </a>
-      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm0.png">
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm0.png" class="img_1_2">
         <img src="./../webpage-imgs/eggschange/brainstorm0.png">
       </a>
-      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.jpg">
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.jpg" class="img_1_3">
         <img src="./../webpage-imgs/eggschange/brainstorm1.jpg">
       </a>
-      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.5.png">     
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.5.png" class="img_1_4">     
         <img src="./../webpage-imgs/eggschange/brainstorm1.5.png">
       </a>
-      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm2.png">
+      <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm2.png" class="img_1_5">
         <img src="./../webpage-imgs/eggschange/brainstorm2.png">
       </a>
     </div>
@@ -102,16 +128,16 @@
     <h2>PERSONA, SCENARIOS AND STORYBOARDS</h2>
     <div class="slides-text-container">
       <div class="persona-text">
-          <img class="persona-img" src="./../webpage-imgs/eggschange/persona1.png">
-          <h2>Bernice Woods</h2>
-          <h3>Retail Salesperson</h3>
-          <p>Bernice is a retail salesperson. She has a flexible schedule and is eager to learn more graphic design skills to help her career development. She wishes to take some freelance jobs in her spare time and potentially become a graphic designer. However, she doesn’t have a lot of money to spare to pay for personal tutoring; and she finds online video courses ineffective, since there’s no feedback or suggestions. She is considering requesting lessons from her high school friends, some of whom are now graphic designers, but she isn’t sure how much free time they might have to teach her with their busy schedules. In return, she is willing to pay as much as she can afford, and also willing to teach cooking, as she is a great cook and has many excellent personal recipes.</p>
+        <img class="persona-img" src="./../webpage-imgs/eggschange/persona1.png">
+        <h2>Bernice Woods</h2>
+        <h3>Retail Salesperson</h3>
+        <p>Bernice is a retail salesperson. She has a <b>flexible schedule</b> and is eager to learn more graphic design skills to help her career development. She wishes to take some freelance jobs in her spare time and potentially become a graphic designer. However, she <b>doesn’t have a lot of money to spare</b> to pay for personal tutoring; and she finds online video courses <b>ineffective</b>, since there’s <b>no feedback or suggestions</b>. She is considering requesting lessons from her high school friends, some of whom are now graphic designers. In return, she is willing to pay as much as she can afford, and also <b>willing to teach cooking</b>, as she is a great cook and has many excellent family recipes. However she isn’t sure how much free time they might have to teach her with their busy schedules.</p>
       </div>
       <div class="persona-text">
-          <img class="persona-img" src="./../webpage-imgs/eggschange/persona2.jpg">
-          <h2>Eric Miller</h2>
-          <h3>Software Engineer</h3>
-          <p>Eric is a software developer at Google and a part-time tutor at an online academy where he teaches programming. He loves teaching because helping people brings him a sense of achievement, but after being a part-time tutor for 2 years, Eric is a little tired of the one-way relationship. He wishes to know his learners, make friends with them, as well as learn new subjects from them, as he has started to realize that all of his current friends are also from Google and rarely talk about anything else than work.</p>
+        <img class="persona-img" src="./../webpage-imgs/eggschange/persona2.jpg">
+        <h2>Eric Miller</h2>
+        <h3>Software Engineer</h3>
+        <p>Eric is a software developer at Google and a part-time tutor at an online academy where he teaches programming. He <b>loves teaching</b> because helping people brings him a sense of achievement, but after being a part-time tutor for 2 years, Eric is a little <b>tired of the one-way relationship</b>. He wishes to know his learners, make friends with them, as well as learn new subjects from them, as he has started to realize that all of his current friends are also from Google and rarely talk about anything else than work.</p>
       </div>
     </div>
     <div></div>
@@ -145,64 +171,65 @@
     </div>
   </div>
   <script src="./../scripts/addDiffImgs.js"></script>
-  <br>
+
  <hr class="separater">
   <div class="text">
-  <h2>PROTOTYPING AND USER TESTING</h2>
-    <p>With our storyboards complete, we created a low fidelity navigation map to help plan out the user interaction with our application. We had some difficulty in figuring out the different processes for teachers and learners, but we quickly realized that the peer-to-peer aspect meant that the processes should be almost completely identical. This quick process of creating a navigation map helped us prepare for the next stage, wireframing.<br><br>
-    After quickly prototyping our navigation map, we started creating low fidelity wire frames of the application to start basic user testing. We chose a very simple low-fidelity black and white format for the screens in order for us to get the most feedback from user testing. We were able to develop a 10 screen clickthrough that tested how a learner might look through available classes, select a cooking class, examine bartering options, and finally request and be approved for a class. </p>
+    <h2>PROTOTYPING AND USER TESTING</h2>
+    <p>With our storyboards complete, we created a low fidelity navigation map to help plan out the user interaction with our application. 
+    We started creating low fidelity wireframes of the application to start basic <b>user testing</b>. We chose a very simple low-fidelity black and white format for the screens in order for us to get the most feedback from user testing. We were able to develop a <b>10 screen clickthrough</b> that tested how a learner might look through available classes, select a cooking class, examine bartering options, and finally request and be approved for a class.<br><br>
+    Some of the difficulties we encountered:
+    <span class="li">We want the registeration to be quick, but we also want to encourage users to upload materials for their expertise, which is quite boring and arduous.</span>
+    <span class="li">We were not sure about how to deal the varying degrees of willingness: e.g. A user might only want to pay with classes, but doesn't want to announce his class to everyone.</span>
+    <span class="li"></span>
+    </p>
     <div></div>
     <div class="tightImgRow2">
-      <a data-featherlight href="./../webpage-imgs/eggschange/UserFlowChart.png">
+      <a data-featherlight href="./../webpage-imgs/eggschange/UserFlowChart.png" class="img_2_1">
         <img src="./../webpage-imgs/eggschange/UserFlowChart.png">
       </a>
-      <a data-featherlight href="./../webpage-imgs/eggschange/Prototype1.jpg">
+      <a data-featherlight href="./../webpage-imgs/eggschange/Prototype1.jpg" class="img_2_2">
         <img src="./../webpage-imgs/eggschange/Prototype1.jpg">
       </a>
-      <a data-featherlight href="./../webpage-imgs/eggschange/Prototype-screen.png">
+      <a data-featherlight href="./../webpage-imgs/eggschange/Prototype-screen.png" class="img_2_3">
         <img src="./../webpage-imgs/eggschange/Prototype-screen.png">
       </a>
     </div>
     <div></div>
-      <iframe src="https://docs.google.com/document/d/e/2PACX-1vT42aG8OsOZphTh02WzvXcQBsMcAC67kuPCvrgcUQfPh0RZao1hovogexhEuX8gpT3P7sPbTHGnarNK/pub?embedded=true"></iframe>
     </div>
   <hr class="separater">
   <div class="text">
   <h2>SCREEN DESIGN</h2>
-    <p>After the user testing round, we tweaked our prototypes, and we were ready to actually design the screens in much more detail. From the start, we developed a mood board to capture the "feelings" of the application. We wanted to emphasize warm and inviting colors, as long as chill and relaxed colors, going for a set of yellows and blues for our app design.<br><br>
-    Using our mood board as inspiration, we were able to generate a style sheet that would dictate the aesthetics of our application. We all decided to focus on the yellow color theme, which sparked an idea for the app name: “eggschange.” Not only does this name have a playful ring on the exchange of knowledge occurring in our peer-to-peer app, but “eggschange” gave us a chance to create an egg logo that would add a whimsical flair to our design.<br><br>
-    For our final screen designs, we were careful to create consistency across the screens, while still created compelling and unique designs. We also made sure to incorporate feedback from our user testing results, which led to major changes in how we presented the bartering or “eggschange” part of the application. We were also careful to keep the egg theme across the application for the touch of whimsy and humor to help people feel more comfortable while using the app. </p>
-
-  </div>
-    <div class="slides1-container">
+    <p>After the user testing round, we tweaked our prototypes, and we were ready to actually design the screens in much more detail. From the start, we developed a <b>mood board</b> to capture the <i>"feelings"</i> of the application. We wanted to emphasize <b>warm and inviting</b> colors, as long as <b>chill and relaxed colors</b>, going for a set of yellows and blues for our app design.<br><br>
+    Using our mood board as inspiration, we were able to generate a <b>style sheet</b> that would dictate the aesthetics of our application. We all decided to focus on the <b>yellow color theme</b>, which sparked an idea for the app name: “eggschange.” Not only does this name have a playful ring on the exchange of knowledge occurring in our peer-to-peer app, but “eggschange” gave us a chance to create an egg logo that would add a whimsical flair to our design.<br><br>
+    For our final screen designs, we were careful to create <b>consistency</b> across the screens, while still created compelling and unique designs. We also made sure to <b>incorporate feedback</b> from our user testing results, which led to major changes in how we presented the bartering or “eggschange” part of the application. We were also careful to keep the egg theme across the application for the touch of whimsy and humor to help people feel more comfortable while using the app. </p>
+    <p></p>
+    <div class="slides3-container">
 
       <!-- Full-width images with number and caption text -->
-      <div class="slides1">
+      <div class="slides3">
         <a data-featherlight href="./../webpage-imgs/eggschange/mood-board.jpg">
           <img src="./../webpage-imgs/eggschange/mood-board.jpg">
         </a>
       </div>
-      <div class="slides1">
+      <div class="slides3">
         <a href="./../webpage-imgs/eggschange/stylesheet.jpg" data-featherlight>
           <img src="./../webpage-imgs/eggschange/stylesheet.jpg">
         </a>
       </div>
-      <div class="slides1">
-        <a href="./../webpage-imgs/eggschange/phone-mockup.jpg" data-featherlight>
-          <img src="./../webpage-imgs/eggschange/phone-mockup.jpg">
-        </a>
-      </div>
-      <div class="slides1">
+      <div class="slides3">
         <a href="./../webpage-imgs/eggschange/Screen-Design-1.jpg" data-featherlight>
           <img src="./../webpage-imgs/eggschange/Screen-Design-1.jpg">
         </a>
       </div>
-      <div class="slides1">
+      <div class="slides3">
         <a href="./../webpage-imgs/eggschange/Screen-Design-2.jpg" data-featherlight>
           <img src="./../webpage-imgs/eggschange/Screen-Design-2.jpg">
         </a>
       </div>
     </div>
+
+  </div>
+    
   <hr class="separater">
   <div class="text">
     <h2>FINAL DEMO</h2>
@@ -212,11 +239,25 @@
   <div class="text">
     <h2>PITCH PRESENTATION</h2>
     <p>Finally, with our designs complete, we created a presentation to pitch our application to the class. We used a dual screen, one with the prototype and the other with the presentation.</p>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQUq0kFBTtSsoHE7yh119RcQV-sS9Dl7vaBLSAVIkE75FJ8tOldk8R5aeivy4jZNSPm2rB2W89Eiikp/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <div></div>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQUq0kFBTtSsoHE7yh119RcQV-sS9Dl7vaBLSAVIkE75FJ8tOldk8R5aeivy4jZNSPm2rB2W89Eiikp/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
   </div>
 <!--img gallery js-->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript">
+    //sets up slider1
+  $(document).ready(function(){
+    $('.slides1-container').slick({
+      infinite: true,
+      dots: true,
+      speed: 300,
+      adaptiveHeight: true,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 2000});
+  });
+  </script>
   <script type="text/javascript">
     //sets up slider1
   $(document).ready(function(){
@@ -248,7 +289,7 @@
   <script type="text/javascript">
     //sets up slider1
   $(document).ready(function(){
-    $('.slides1-container').slick({
+    $('.slides3-container').slick({
       infinite: true,
       dots: true,
       speed: 300,
