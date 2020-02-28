@@ -3,18 +3,39 @@
   <head>
   <meta charset="utf-8">
   <meta content="Portfolio of Samson Liu">
-  <title>Samson Liu, Designer </title>
-  <link rel="stylesheet" href="./../styles/base-style.css">
-  <link rel="stylesheet" href="./about-style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+  <title>Span</title>
+  <link href="./../styles/slick.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="./../../scripts/isotope.pkgd.min.js"></script>
-  <script src="./../../scripts/velocity.min.js"></script>
-  <script src="./../../scripts/jQuery.smoothState.min.js"></script>
-  <script src="./../../scripts/packery-mode.pkgd.min.js"></script>
+
+  <link rel="stylesheet" href="./../styles/base-style.css">
+  <link rel="stylesheet" href="./../styles/works-style.css">
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="./../faviconit/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="./../faviconit/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="./../faviconit/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="./../faviconit/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../faviconit/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="./../faviconit/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../faviconit/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../faviconit/favicon-16.png">
+  <link rel="apple-touch-icon" href="./../faviconit/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../faviconit/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../faviconit/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./../faviconit/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./../faviconit/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./../faviconit/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./../faviconit/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./../faviconit/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../faviconit/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
+  <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
   </head>
   <body>
+<!--
     <header role="banner">
       <a href="./../../index.htm"><h1>Samson Liu</h1></a>
     <nav role="navigation">
@@ -29,8 +50,106 @@
       </h3>
     </nav>
     </header>
+-->
+<!--header img-->
+  <div class="header-img" style="background: 
+  url('./../webpage-imgs/ecs/MainView.png'); 
+  background-size: cover;
+  background-position: center;">
+    <div class="gradient1"></div>
+    <div class="gradient2"></div>
+    <h2 class="centered">Span</h2>
+  </div>
 
+<!--main content-->
+  <div id="title">
+  <h1>STRUCTURE, DESIGN AND FABRICATION</h1>
+  <h3>Project Date: 2015 Spring Studio | Collaborative</h3>
+  </div>
 
-    <script src="scripts.js"></script>
+  <div class="slides1-container">
+
+  <!-- Full-width images with number and caption text -->
+    <div class="slides1">
+      <a data-featherlight href="./../webpage-imgs/span/Span01.jpg">
+        <img src="./../webpage-imgs/span/Span01.jpg">
+      </a>
+    </div>
+    <div class="slides1">
+      <a href="./../webpage-imgs/span/Span02.jpg" data-featherlight>
+        <img src="./../webpage-imgs/span/Span02.jpg">
+      </a>
+    </div>
+    <div class="slides1">
+      <a href="./../webpage-imgs/span/Span03.jpg" data-featherlight>
+        <img src="./../webpage-imgs/span/Span03.jpg">
+      </a>
+    </div>
+    <div class="slides1">
+      <a href="./../webpage-imgs/span/Span04.jpg" data-featherlight>
+        <img src="./../webpage-imgs/span/Span04.jpg">
+      </a>
+    </div>
+  </div>
+
+<!--img gallery js-->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript">
+    //sets up slider1
+  $(document).ready(function(){
+    $('.slides1-container').slick({
+      infinite: true,
+      dots: true,
+      speed: 300,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 2000});
+  });
+  </script>
+
+  <div class="text">
+  <h2>PROJECT</h2>
+    <p>This is a project in my second semester. In this project, teams of 2 are asked to design and fabricate a structure that spans 4 feet. The final structure should withhold one adult person's weight. In a sense, this is my very first free design project.<br><br>
+    At first, My teammate and I were building random ideas out of paper and cardboard. After we combined our ideas and continued brainstorming, we decided to carry on designing with the concept of <b>first and secondary structure</b> in mind. Later in a collaborative improvising build session, we stumbled on the idea of a helix.<br><br>
+    As shown, we went through various iterations, and fabricated test pieces to test out the joints. In the final design, we adjusted the orientation of primary components to utilize the grain direction of wood for more strength. The final span could support the weight of two grown men.
+    </p>
+    <p></p>
+    <div class="slides3-container">
+      <div class="slides3">
+        <a data-featherlight href="./../webpage-imgs/span/photo1.jpg">
+          <img src="./../webpage-imgs/span/photo1.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/span/photo2.jpg" data-featherlight>
+          <img src="./../webpage-imgs/span/photo2.jpg">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+      //sets up slider3
+    $(document).ready(function(){
+      $('.slides3-container').slick({
+        infinite: true,
+        dots: true,
+        speed: 300,
+        arrows: true,
+        autoplay: true,
+        adaptiveHeight: true,
+        autoplaySpeed: 2000});
+    });
+  </script>
+  <div class="text">
+    <h2 class="button"><a href="./../index.htm">Back to projects</a></h2>
+  </div>
+  <footer>
+    <p>&copy;Samson Liu, 2019, All rights reserved.</p>
+  </footer>
+
+<!--Final Plans and Sections-->
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
