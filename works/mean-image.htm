@@ -59,28 +59,28 @@
     </a>
     </div>
     <div class="slides1">
-    <a href="./../webpage-imgs/mean-image/vogue_comp.jpg" data-featherlight>
-      <img src="./../webpage-imgs/mean-image/vogue_comp.jpg">
-    </a>
+      <a href="./../webpage-imgs/mean-image/vogue_comp.jpg" data-featherlight>
+        <img src="./../webpage-imgs/mean-image/vogue_comp.jpg">
+      </a>
     </div>
     <div class="slides1">
-    <a href="./../webpage-imgs/mean-image/playboy_cover.jpg" data-featherlight>
-      <img src="./../webpage-imgs/mean-image/playboy_cover.jpg">
-    </a>
+      <a href="./../webpage-imgs/mean-image/playboy_cover.jpg" data-featherlight>
+        <img data-lazy="./../webpage-imgs/mean-image/playboy_cover.jpg">
+      </a>
     </div>
     <div class="slides1">
       <a data-featherlight href="./../webpage-imgs/mean-image/Average-Seattle.jpg">
-        <img src="./../webpage-imgs/mean-image/Average-Seattle.jpg">
+        <img data-lazy="./../webpage-imgs/mean-image/Average-Seattle.jpg">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/mean-image/pisa.jpg" data-featherlight>
-        <img src="./../webpage-imgs/mean-image/pisa.jpg">
+        <img data-lazy="./../webpage-imgs/mean-image/pisa.jpg">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/mean-image/Beverage.jpg" data-featherlight>
-        <img src="./../webpage-imgs/mean-image/Beverage.jpg">
+        <img data-lazy="./../webpage-imgs/mean-image/Beverage.jpg">
       </a>
     </div>
   </div>
@@ -93,6 +93,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides1-container').slick({
+      lazyLoad: 'progressive',
       infinite: true,
       dots: true,
       speed: 300,

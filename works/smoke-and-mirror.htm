@@ -68,32 +68,32 @@
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/IMG-1001.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/IMG-1001.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/IMG-1001.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/IMG-1009.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/IMG-1009.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/IMG-1009.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/IMG-1011.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/IMG-1011.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/IMG-1011.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/IMG-0981.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/IMG-0981.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/IMG-0981.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/p1_1.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/p1_1.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/p1_1.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/p1_2.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/p1_2.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/p1_2.jpg">
         </a>
       </div>     
     </div>
@@ -107,13 +107,13 @@
     <p></p>
     <div class="tightImgRow">
       <a data-featherlight href="./../webpage-imgs/smoke-and-mirror/fake-col1.jpg" class="img_3_1">
-        <img src="./../webpage-imgs/smoke-and-mirror/fake-col1.jpg">
+        <img class="lazy" data-src="./../webpage-imgs/smoke-and-mirror/fake-col1.jpg">
       </a>
       <a data-featherlight href="./../webpage-imgs/smoke-and-mirror/fake-col2.jpg" class="img_3_1">
-        <img src="./../webpage-imgs/smoke-and-mirror/fake-col2.jpg">
+        <img class="lazy" data-src="./../webpage-imgs/smoke-and-mirror/fake-col2.jpg">
       </a>
       <a data-featherlight href="./../webpage-imgs/smoke-and-mirror/fake-col3.jpg" class="img_3_1">
-        <img src="./../webpage-imgs/smoke-and-mirror/fake-col3.jpg">
+        <img class="lazy" data-src="./../webpage-imgs/smoke-and-mirror/fake-col3.jpg">
       </a>
     </div>
     <p></p>
@@ -125,27 +125,27 @@
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/p2_1.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/p2_1.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/p2_1.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/p2_2.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/p2_2.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/p2_2.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/p2_3.jpg" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/p2_3.jpg">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/p2_3.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/Background.png" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/Background.png">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/Background.png">
         </a>
       </div>      
       <div class="slides3">
         <a href="./../webpage-imgs/smoke-and-mirror/profile_white.gif" data-featherlight>
-          <img src="./../webpage-imgs/smoke-and-mirror/profile_white.gif">
+          <img data-lazy="./../webpage-imgs/smoke-and-mirror/profile_white.gif">
         </a>
       </div>
     </div>
@@ -185,6 +185,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides3-container').slick({
+      lazyLoad: 'progressive',
       infinite: true,
       dots: true,
       speed: 300,

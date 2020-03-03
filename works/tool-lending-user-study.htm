@@ -90,17 +90,17 @@
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/tool-lending-user-study/Stakeholders-Map.jpg" data-featherlight>
-      <img src="./../webpage-imgs/tool-lending-user-study/Stakeholders-Map.jpg">
+      <img data-lazy="./../webpage-imgs/tool-lending-user-study/Stakeholders-Map.jpg">
     </a>
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/tool-lending-user-study/Customer-Journey-Map-1.jpg" data-featherlight>
-      <img src="./../webpage-imgs/tool-lending-user-study/Customer-Journey-Map-1.jpg">
+      <img data-lazy="./../webpage-imgs/tool-lending-user-study/Customer-Journey-Map-1.jpg">
     </a>
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/tool-lending-user-study/Customer-Journey-Map-2.jpg" data-featherlight>
-      <img src="./../webpage-imgs/tool-lending-user-study/Customer-Journey-Map-2.jpg">
+      <img data-lazy="./../webpage-imgs/tool-lending-user-study/Customer-Journey-Map-2.jpg">
     </a>
   </div>
 
@@ -116,6 +116,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides3-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,

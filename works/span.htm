@@ -77,17 +77,17 @@
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/span/Span02.jpg" data-featherlight>
-        <img src="./../webpage-imgs/span/Span02.jpg">
+        <img data-lazy="./../webpage-imgs/span/Span02.jpg">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/span/Span03.jpg" data-featherlight>
-        <img src="./../webpage-imgs/span/Span03.jpg">
+        <img data-lazy="./../webpage-imgs/span/Span03.jpg">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/span/Span04.jpg" data-featherlight>
-        <img src="./../webpage-imgs/span/Span04.jpg">
+        <img data-lazy="./../webpage-imgs/span/Span04.jpg">
       </a>
     </div>
   </div>
@@ -99,6 +99,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides1-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,
@@ -118,12 +119,12 @@
     <div class="slides3-container">
       <div class="slides3">
         <a data-featherlight href="./../webpage-imgs/span/photo1.jpg">
-          <img src="./../webpage-imgs/span/photo1.jpg">
+          <img data-lazy="./../webpage-imgs/span/photo1.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/span/photo2.jpg" data-featherlight>
-          <img src="./../webpage-imgs/span/photo2.jpg">
+          <img data-lazy="./../webpage-imgs/span/photo2.jpg">
         </a>
       </div>
     </div>
@@ -133,6 +134,7 @@
       //sets up slider3
     $(document).ready(function(){
       $('.slides3-container').slick({
+        lazyLoad: 'progressive',
         infinite: true,
         dots: true,
         speed: 300,
