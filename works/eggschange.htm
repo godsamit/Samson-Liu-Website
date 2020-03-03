@@ -33,6 +33,7 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
   <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
+  <script src="./../scripts/lazyLoad.js"></script>
   </head>
 
   <body>
@@ -71,23 +72,23 @@
 
     <!-- Full-width images with number and caption text -->
     <div class="slides1">
-      <a data-featherlight href="./../webpage-imgs/threads/View-2.png">
+      <a data-featherlight href="./../webpage-imgs/eggschange/Eggschange-isometric.jpg">
         <img src="./../webpage-imgs/eggschange/Eggschange-isometric.jpg">
       </a>
     </div>
     <div class="slides1">
-      <a href="./../webpage-imgs/threads/View-1.png" data-featherlight>
-        <img src="./../webpage-imgs/eggschange/mockup-3.jpg">
+      <a href="./../webpage-imgs/eggschange/mockup-3.jpg" data-featherlight>
+        <img data-lazy="./../webpage-imgs/eggschange/mockup-3.jpg">
       </a>
     </div>
     <div class="slides1">
-      <a href="./../webpage-imgs/threads/View-4.png" data-featherlight>
-        <img src="./../webpage-imgs/eggschange/mockup-2.jpg">
+      <a href="./../webpage-imgs/eggschange/mockup-2.jpg" data-featherlight>
+        <img data-lazy="./../webpage-imgs/eggschange/mockup-2.jpg">
       </a>
     </div>
     <div class="slides1">
-      <a href="./../webpage-imgs/threads/View-3.png" data-featherlight>
-        <img src="./../webpage-imgs/eggschange/mockup-1.jpg">
+      <a href="./../webpage-imgs/eggschange/mockup-1.jpg" data-featherlight>
+        <img data-lazy="./../webpage-imgs/eggschange/mockup-1.jpg">
       </a>
     </div>
   </div>
@@ -105,19 +106,19 @@
     <div></div>
     <div class="tightImgRow">
       <a data-featherlight href="./../webpage-imgs/eggschange/ResearchJourney.png" class="img_1_1">
-        <img src="./../webpage-imgs/eggschange/ResearchJourney.png">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/ResearchJourney.png">
       </a>
       <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm0.png" class="img_1_2">
-        <img src="./../webpage-imgs/eggschange/brainstorm0.png">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/brainstorm0.png">
       </a>
       <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.jpg" class="img_1_3">
-        <img src="./../webpage-imgs/eggschange/brainstorm1.jpg">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/brainstorm1.jpg">
       </a>
       <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm1.5.png" class="img_1_4">     
-        <img src="./../webpage-imgs/eggschange/brainstorm1.5.png">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/brainstorm1.5.png">
       </a>
       <a data-featherlight href="./../webpage-imgs/eggschange/brainstorm2.png" class="img_1_5">
-        <img src="./../webpage-imgs/eggschange/brainstorm2.png">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/brainstorm2.png">
       </a>
     </div>
   </div>
@@ -185,13 +186,13 @@
     <div></div>
     <div class="tightImgRow2">
       <a data-featherlight href="./../webpage-imgs/eggschange/UserFlowChart.png" class="img_2_1">
-        <img src="./../webpage-imgs/eggschange/UserFlowChart.png">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/UserFlowChart.png">
       </a>
       <a data-featherlight href="./../webpage-imgs/eggschange/Prototype1.jpg" class="img_2_2">
-        <img src="./../webpage-imgs/eggschange/Prototype1.jpg">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/Prototype1.jpg">
       </a>
       <a data-featherlight href="./../webpage-imgs/eggschange/Prototype-screen.png" class="img_2_3">
-        <img src="./../webpage-imgs/eggschange/Prototype-screen.png">
+        <img class="lazy" data-src="./../webpage-imgs/eggschange/Prototype-screen.png">
       </a>
     </div>
     <div></div>
@@ -208,22 +209,22 @@
       <!-- Full-width images with number and caption text -->
       <div class="slides3">
         <a data-featherlight href="./../webpage-imgs/eggschange/mood-board.jpg">
-          <img src="./../webpage-imgs/eggschange/mood-board.jpg">
+          <img data-lazy="./../webpage-imgs/eggschange/mood-board.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/eggschange/stylesheet.jpg" data-featherlight>
-          <img src="./../webpage-imgs/eggschange/stylesheet.jpg">
+          <img data-lazy="./../webpage-imgs/eggschange/stylesheet.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/eggschange/Screen-Design-1.jpg" data-featherlight>
-          <img src="./../webpage-imgs/eggschange/Screen-Design-1.jpg">
+          <img data-lazy="./../webpage-imgs/eggschange/Screen-Design-1.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/eggschange/Screen-Design-2.jpg" data-featherlight>
-          <img src="./../webpage-imgs/eggschange/Screen-Design-2.jpg">
+          <img data-lazy="./../webpage-imgs/eggschange/Screen-Design-2.jpg">
         </a>
       </div>
     </div>
@@ -257,6 +258,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides1-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,
@@ -270,6 +272,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides-text-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,

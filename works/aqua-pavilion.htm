@@ -77,27 +77,27 @@
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/aqua-pavilion/Rainy-Render.png" data-featherlight>
-        <img src="./../webpage-imgs/aqua-pavilion/Rainy-Render.png">
+        <img data-lazy="./../webpage-imgs/aqua-pavilion/Rainy-Render.png">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/aqua-pavilion/Elevation1.jpg" data-featherlight>
-        <img src="./../webpage-imgs/aqua-pavilion/Elevation1.jpg">
+        <img data-lazy="./../webpage-imgs/aqua-pavilion/Elevation1.jpg">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/aqua-pavilion/Elevation2.jpg" data-featherlight>
-        <img src="./../webpage-imgs/aqua-pavilion/Elevation2.jpg">
+        <img data-lazy="./../webpage-imgs/aqua-pavilion/Elevation2.jpg">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/aqua-pavilion/Long-Section.jpg" data-featherlight>
-        <img src="./../webpage-imgs/aqua-pavilion/Long-Section.jpg">
+        <img data-lazy="./../webpage-imgs/aqua-pavilion/Long-Section.jpg">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/aqua-pavilion/Axon.jpg" data-featherlight>
-        <img src="./../webpage-imgs/aqua-pavilion/Axon.jpg">
+        <img data-lazy="./../webpage-imgs/aqua-pavilion/Axon.jpg">
       </a>
     </div>
 
@@ -134,17 +134,17 @@
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/aqua-pavilion/fieldwork_1.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/fieldwork_1.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/fieldwork_1.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="#" data-featherlight="./../webpage-imgs/aqua-pavilion/fieldwork_2.jpg">
-          <img src="./../webpage-imgs/aqua-pavilion/fieldwork_2.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/fieldwork_2.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/aqua-pavilion/Site.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/Site.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/Site.jpg">
         </a>
       </div>
     </div>
@@ -156,22 +156,22 @@
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/aqua-pavilion/Geometry-plan.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/Geometry-plan.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/Geometry-plan.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/aqua-pavilion/Roof-Plan.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/Roof-Plan.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/Roof-Plan.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/aqua-pavilion/Plan1.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/Plan1.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/Plan1.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/aqua-pavilion/Hydraulophone.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/Hydraulophone.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/Hydraulophone.jpg">
         </a>
       </div>
     </div>
@@ -193,32 +193,32 @@
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/aqua-pavilion/IMG_2579.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/IMG_2579.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/IMG_2579.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/aqua-pavilion/IMG_2661.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/IMG_2661.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/IMG_2661.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/aqua-pavilion/IMG_2651.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/IMG_2651.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/IMG_2651.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/aqua-pavilion/IMG_2599.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/IMG_2599.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/IMG_2599.jpg">
         </a>
       </div>
       <div class="slides1">
         <a href="./../webpage-imgs/aqua-pavilion/IMG_2624.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/IMG_2624.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/IMG_2624.jpg">
         </a>
       </div>
       <div class="slides1">
         <a href="./../webpage-imgs/aqua-pavilion/IMG_2633.jpg" data-featherlight>
-          <img src="./../webpage-imgs/aqua-pavilion/IMG_2633.jpg">
+          <img data-lazy="./../webpage-imgs/aqua-pavilion/IMG_2633.jpg">
         </a>
       </div>
     </div>
@@ -227,6 +227,7 @@
     //sets up slider2
   $(document).ready(function(){
     $('.slides2-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,
@@ -243,12 +244,12 @@
       //sets up slider3
     $(document).ready(function(){
       $('.slides3-container').slick({
+        lazyLoad: 'ondemand',
         infinite: true,
         dots: true,
         speed: 300,
         arrows: true,
         autoplay: true,
-        adaptiveHeight: true,
         autoplaySpeed: 2000});
     });
   </script>

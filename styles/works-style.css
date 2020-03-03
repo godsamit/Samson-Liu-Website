@@ -126,9 +126,11 @@ h1{
 }
 /*Using slick.js, change some default styling*/
 .slick-prev:before, .slick-next:before{
-  color:#00000080 !important;
+  color:#ed652d80 !important;
 }
-
+.slick-dots li button:before{
+  color:#ed652d !important;  
+}
 .slick-prev {
   margin-left: 40px !important;
   z-index: 1;

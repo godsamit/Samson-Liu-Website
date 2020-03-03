@@ -33,6 +33,7 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
   <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
+  <script src="./../scripts/lazyLoad.js"></script>
   </head>
   <body>
 <!--
@@ -77,17 +78,17 @@
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/ecs/Overall.png" data-featherlight>
-        <img src="./../webpage-imgs/ecs/Overall.png">
+        <img data-lazy="./../webpage-imgs/ecs/Overall.png">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/ecs/PLATFORM.png" data-featherlight>
-        <img src="./../webpage-imgs/ecs/PLATFORM.png">
+        <img data-lazy="./../webpage-imgs/ecs/PLATFORM.png">
       </a>
     </div>
     <div class="slides1">
       <a href="./../webpage-imgs/ecs/Long-Section.png" data-featherlight>
-        <img src="./../webpage-imgs/ecs/Long-Section.png">
+        <img data-lazy="./../webpage-imgs/ecs/Long-Section.png">
       </a>
     </div>
   </div>
@@ -99,6 +100,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides1-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,
@@ -128,17 +130,17 @@
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/SitePhotos/ECS1.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/SitePhotos/ECS1.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/SitePhotos/ECS1.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/SitePhotos/ECS2.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/SitePhotos/ECS2.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/SitePhotos/ECS2.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/SitePhotos/ECS3.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/SitePhotos/ECS3.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/SitePhotos/ECS3.jpg">
           </a>
         </div>
         <div class="slides2">
@@ -156,17 +158,17 @@
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/SitePhotos/Larimer1.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/SitePhotos/Larimer1.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/SitePhotos/Larimer1.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/SitePhotos/Larimer2.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/SitePhotos/Larimer2.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/SitePhotos/Larimer2.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/SitePhotos/Larimer3.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/SitePhotos/Larimer3.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/SitePhotos/Larimer3.jpg">
           </a>
         </div>
         <div class="slides2">
@@ -185,52 +187,52 @@
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/CompetitiveAnalysis2.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/CompetitiveAnalysis2.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/CompetitiveAnalysis2.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/WalkingDistance.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/WalkingDistance.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/WalkingDistance.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/ConvenienceStore.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/ConvenienceStore.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/ConvenienceStore.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/Shopping.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/Shopping.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/Shopping.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/Restaurant.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/Restaurant.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/Restaurant.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/ReligiousBuilding.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/ReligiousBuilding.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/ReligiousBuilding.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/FrequentPaths.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/FrequentPaths.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/FrequentPaths.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/SpringEquinox.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/SpringEquinox.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/SpringEquinox.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/SummerSolstice.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/SummerSolstice.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/SummerSolstice.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/SiteDiagrams/FallEquinox.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/SiteDiagrams/FallEquinox.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/SiteDiagrams/FallEquinox.jpg">
         </a>
       </div>
       <div class="slides3">
@@ -246,6 +248,7 @@
     //sets up slider2
   $(document).ready(function(){
     $('.slides2-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,
@@ -275,22 +278,22 @@
       </div>
       <div class="slides3">
         <a href="#" data-featherlight="./../webpage-imgs/ecs/GardensDiagram.png">
-          <img src="./../webpage-imgs/ecs/GardensDiagram.png">
+          <img data-lazy="./../webpage-imgs/ecs/GardensDiagram.png">
         </a>
       </div>
       <div class="slides3">
         <a href="#" data-featherlight="./../webpage-imgs/ecs/parti.png">
-          <img src="./../webpage-imgs/ecs/parti.png">
+          <img data-lazy="./../webpage-imgs/ecs/parti.png">
         </a>
       </div>
       <div class="slides3">
         <a href="#" data-featherlight="./../webpage-imgs/ecs/classroomShape.jpg">
-          <img src="./../webpage-imgs/ecs/classroomShape.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/classroomShape.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="#" data-featherlight="./../webpage-imgs/ecs/structuralGrid.png">
-          <img src="./../webpage-imgs/ecs/structuralGrid.png">
+          <img data-lazy="./../webpage-imgs/ecs/structuralGrid.png">
         </a>
       </div>
     </div>  
@@ -418,17 +421,17 @@
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/windSpeed1.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/windSpeed1.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/windSpeed1.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/windSpeed2.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/windSpeed2.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/windSpeed2.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/radiation1.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/radiation1.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/radiation1.jpg">
           </a>
         </div>
         <div class="slides2">
@@ -441,12 +444,12 @@
         <!-- Full-width images with number and caption text -->
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/Glare_Analysis_Base.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/Glare_Analysis_Base.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/Glare_Analysis_Base.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/Glare_Analysis_Vertical_Fins.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/Glare_Analysis_Vertical_Fins.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/Glare_Analysis_Vertical_Fins.jpg">
           </a>
         </div>
         <div class="slides2">
@@ -456,17 +459,17 @@
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/Glare_Analysis_Random_Fins.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/Glare_Analysis_Random_Fins.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/Glare_Analysis_Random_Fins.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/Glare_Analysis_Parallel_Fins.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/Glare_Analysis_Parallel_Fins.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/Glare_Analysis_Parallel_Fins.jpg">
           </a>
         </div>
         <div class="slides2">
           <a href="./../webpage-imgs/ecs/classroomSim.jpg" data-featherlight>
-            <img src="./../webpage-imgs/ecs/classroomSim.jpg">
+            <img data-lazy="./../webpage-imgs/ecs/classroomSim.jpg">
           </a>
         </div>
         <div class="slides2">
@@ -491,22 +494,22 @@
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/finalModel2.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/finalModel2.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/finalModel2.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/finalModel3.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/finalModel3.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/finalModel3.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/finalModel4.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/finalModel4.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/finalModel4.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/finalModel5.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/finalModel5.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/finalModel5.jpg">
         </a>
       </div>
     </div>
@@ -519,27 +522,27 @@
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/4thFloor.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/4thFloor.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/4thFloor.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/3rdFloor.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/3rdFloor.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/3rdFloor.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/2ndFloor.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/2ndFloor.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/2ndFloor.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/1stFloor.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/1stFloor.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/1stFloor.jpg">
         </a>
       </div>
       <div class="slides3">
         <a href="./../webpage-imgs/ecs/Foundation.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/Foundation.jpg">
+          <img data-lazy="./../webpage-imgs/ecs/Foundation.jpg">
         </a>
       </div>
     </div>
@@ -547,24 +550,25 @@
     <p>During the integrated design workshop held by the studio, I got to consult structure and HVAC engineers, contractors, contractors and the client to look for feedback and advice on my design.<br><br>
     The final design integrated building systems in the following aspects:<br><br>
     <span class="li">HVAC: All the classrooms and office areas are ventilated by fan-coil unit ventilators. A separate packaged rooftop unit and duct system is adopted for the public spaces and passage ways. Only exhaust in the bathroom.</span>
-    <span class="li">Rainwater collection:</span>
+    <span class="li">Rainwater collection: A rainwater collection is integrated and calculated.</span>
+    <span class="li">Solar Panels: Solar panels' capacities are calculated.</span>
     </p>
     <p></p>
     <div class="img-container">
         <a href="./../webpage-imgs/ecs/roofToWallSection.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/roofToWallSection.jpg">
+          <img class="lazy" data-src="./../webpage-imgs/ecs/roofToWallSection.jpg">
         </a>
     </div>
     <p></p>
     <div class="img-container">
         <a href="./../webpage-imgs/ecs/floorToFloorSection.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/floorToFloorSection.jpg">
+          <img class="lazy" data-src="./../webpage-imgs/ecs/floorToFloorSection.jpg">
         </a>
     </div>
     <p></p>
     <div class="img-container">
         <a href="./../webpage-imgs/ecs/foundationSection.jpg" data-featherlight>
-          <img src="./../webpage-imgs/ecs/foundationSection.jpg">
+          <img class="lazy" data-src="./../webpage-imgs/ecs/foundationSection.jpg">
         </a>
     </div>
     <p></p>
@@ -574,6 +578,7 @@
       //sets up slider3
     $(document).ready(function(){
       $('.slides3-container').slick({
+        lazyLoad:'ondemand',
         infinite: true,
         dots: true,
         speed: 300,

@@ -33,6 +33,7 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
   <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
+  <script src="./../scripts/lazyLoad.js"></script>
   </head>
   <body>
 <!--
@@ -70,21 +71,11 @@
 <!--img gallery js-->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript">
-    //sets up slider1
-  $(document).ready(function(){
-    $('.slides1-container').slick({
-      infinite: true,
-      dots: true,
-      speed: 300,
-      arrows: true,
-      autoplay: true,
-      autoplaySpeed: 2000});
-  });
-  </script>
-  <a href="./../webpage-imgs/downtown-cafe/Final-Submission.jpg" data-featherlight>
-    <img class="slides1-container" src="./../webpage-imgs/downtown-cafe/Final-Submission.jpg">
-  </a>
+  <div class="slides1-container">
+    <a href="./../webpage-imgs/downtown-cafe/Final-Submission.jpg" data-featherlight>
+      <img width="100%" src="./../webpage-imgs/downtown-cafe/Final-Submission.jpg">
+    </a>
+  </div>
 
   <div class="text">
     <h2>DESIGNING AN ASSIGNMENT</h2>
@@ -106,47 +97,47 @@
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_02.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_02.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_02.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="#" data-featherlight="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_04.jpg">
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_04.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_04.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_06.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_06.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_06.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_08.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_08.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_08.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_09.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_09.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_09.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_11.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_11.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_11.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_12.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_12.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_12.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_21.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_21.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_21.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_23.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_23.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow I_Page_23.jpg">
         </a>
       </div>
       <div class="slides2">
@@ -164,37 +155,37 @@
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_02.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_02.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_02.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_12.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_12.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_12.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_13.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_13.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_13.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_16.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_16.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_16.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_18.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_18.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_18.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_19.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_19.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_19.jpg">
         </a>
       </div>
       <div class="slides2">
         <a href="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_20.jpg" data-featherlight>
-          <img src="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_20.jpg">
+          <img data-lazy="./../webpage-imgs/downtown-cafe/Hybrid Workflow II_Page_20.jpg">
         </a>
       </div>
       <div class="slides2">
@@ -211,6 +202,7 @@
     //sets up slider2
   $(document).ready(function(){
     $('.slides2-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,

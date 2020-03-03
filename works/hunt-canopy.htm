@@ -82,32 +82,32 @@
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/hunt-canopy/Day-Render.jpg" data-featherlight>
-      <img src="./../webpage-imgs/hunt-canopy/Day-Render.jpg">
+      <img data-lazy="./../webpage-imgs/hunt-canopy/Day-Render.jpg">
     </a>
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/hunt-canopy/Model1.jpg" data-featherlight>
-      <img src="./../webpage-imgs/hunt-canopy/Model1.jpg">
+      <img data-lazy="./../webpage-imgs/hunt-canopy/Model1.jpg">
     </a>
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/hunt-canopy/Model2.jpg" data-featherlight>
-      <img src="./../webpage-imgs/hunt-canopy/Model2.jpg">
+      <img data-lazy="./../webpage-imgs/hunt-canopy/Model2.jpg">
     </a>
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/hunt-canopy/Model3.jpg" data-featherlight>
-      <img src="./../webpage-imgs/hunt-canopy/Model3.jpg">
+      <img data-lazy="./../webpage-imgs/hunt-canopy/Model3.jpg">
     </a>
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/hunt-canopy/Design-Intent.jpg" data-featherlight>
-      <img src="./../webpage-imgs/hunt-canopy/Design-Intent.jpg">
+      <img data-lazy="./../webpage-imgs/hunt-canopy/Design-Intent.jpg">
     </a>
   </div>
   <div class="slides3">
     <a href="./../webpage-imgs/hunt-canopy/Axon.jpg" data-featherlight>
-      <img src="./../webpage-imgs/hunt-canopy/Axon.jpg">
+      <img data-lazy="./../webpage-imgs/hunt-canopy/Axon.jpg">
     </a>
   </div>
   </div>
@@ -121,6 +121,7 @@
     //sets up slider1
   $(document).ready(function(){
     $('.slides3-container').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       dots: true,
       speed: 300,
