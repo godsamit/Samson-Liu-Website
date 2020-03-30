@@ -1,16 +1,77 @@
 <!DOCYTYPE HTML>
-<html>
+<html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta content="Portfolio of Samson Liu">
+  <title>Samson Liu</title>
+  <link rel="stylesheet" href="./../styles/base-style.css">
+  <link rel="stylesheet" href="./contact-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="./../faviconit/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="./../faviconit/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="./../faviconit/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="./../faviconit/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../faviconit/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="./../faviconit/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../faviconit/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../faviconit/favicon-16.png">
+  <link rel="apple-touch-icon" href="./../faviconit/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../faviconit/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../faviconit/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./../faviconit/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./../faviconit/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./../faviconit/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./../faviconit/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./../faviconit/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../faviconit/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="./../faviconit/favicon-144.png">
+  <meta name="msapplication-config" content="./../faviconit/browserconfig.xml">
   </head>
   <body>
-    <aside>
-      <h5><a href="../index.htm">Go to Home</a></h5>
-      <h5><a href="../About/about.htm">About</a></h5>
-    </aside>
-  
-    <script src="scripts.js"></script>
+   <header role="banner">
+      <a href="./../index.htm"><h1>Samson Liu</h1></a>
+    <nav id="main" role="navigation">
+      <a id="sidebarButton" onclick="toggleSideBar()">
+        ☰
+      </a>
+      <h3>
+        <a class="one" href="./../index.htm#">
+          Work</a>
+      </h3>
+      <h3>
+        <a class="two" href="./about/about.htm#">
+          About</a>
+      </h3>
+      <h3>
+        <a class="three is-checked" href="#">
+          Contact
+        </a>
+      </h3>
+    </nav>
+    </header>
+    <script src="./../scripts/sidebar.js"></script>
+    <div class="emailForm">
+      <h2>Shoot me an email!</h2>
+
+      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      Name:<br>
+      <input type="text" name="name"><br>
+      E-mail:<br>
+      <input type="text" name="mail"><br>
+      Content:<br>
+      <textarea name="message" rows="10" cols="100"></textarea>
+      <div class="g-recaptcha" data-sitekey="6LezM-UUAAAAAAfuCQTfPRt3uLXfHu0XqSM2ntOA"></div>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      </form>
+    </div>
+    <footer>
+      <p>&copy;Samson Liu, 2018, All rights reserved.</p>
+    </footer>
   </body>
 </html>

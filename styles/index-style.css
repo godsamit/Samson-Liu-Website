@@ -1,3 +1,58 @@
+
+#splash {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  background-image: url("./../webpage-imgs/spacy-language/render1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: bottom center;
+  z-index: 5;
+  padding: 30px;
+}
+
+@media screen and (min-width: 600px){
+  #splash{
+    padding:100px;
+  }
+}
+#splash p{
+  font-family: 'Noto Serif', serif;
+  font-size: 2em;
+  color: #fff;
+  font-weight:400;
+}
+@media screen and (min-width: 600px){
+  #splash p{
+    font-size:3em;
+  }
+}
+#splash p em{
+  color:#eb652d;
+  font-weight:400;
+}
+#splash .enter_link{
+  text-align: right;
+}
+#splash .enter_link a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Bebas Book", serif;
+  letter-spacing: 1px;
+  color: #eb652d;
+  border: 1px #eb652d solid;
+  padding: 8px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 600px){
+  #splash .enter_link a{
+    font-size: 40px;
+    margin-right: 180px;
+  }
+}
 /* filters 
 --------------------- */
 
