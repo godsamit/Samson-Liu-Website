@@ -1,4 +1,7 @@
 var displaySplash = localStorage.getItem("displaySplash");
+if (displaySplash){
+  $('#splash').remove();
+}
 
 /* disable scrolling on splashscreen */
 // quoted from https://stackoverflow.com/questions/4770025/how-to-disable-scrolling-temporarily?page=1&tab=votes#tab-top
@@ -45,16 +48,16 @@ function enableScroll() {
 }
 /* disable scrolling on splashscreen */
 
+
 if (displaySplash){
-  $('#splash').remove();
   enableScroll();
 }
 else {
-disableScroll();
-$('.enter_link').click(function () {
-    $(this).parent('#splash').fadeOut(400);
-    enableScroll();
-    localStorage.setItem("displaySplash", "true");
+  disableScroll();
+  $('.enter_link').click(function (){
+      $(this).parent('#splash').fadeOut(400);
+      enableScroll();
+      localStorage.setItem("displaySplash", "true");
   });
 }
 

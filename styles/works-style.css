@@ -221,15 +221,23 @@ h1{
 /*text body*/
 .summary{
   width: 80%;
-  margin: 60px auto 0px;
-  font-family: "Noto Serif", serif;
-  font-size: 1em;
-  font-weight: 500;
-  letter-spacing: -0.5px;
+  margin: 20px auto 0px;
   color:#555;
-  line-height: 1.5em;
-}
 
+}
+.summary tr{
+  font-family: "Noto Serif", serif;
+  font-size: 0.8em;
+  color: #555;
+  text-align: left;
+  vertical-align: top;
+}
+.summary tr th:first-child{
+  width: 20%;
+}
+.summary tr th:last-child{
+  font-weight: 400;
+}
 .text{
   width: 80%;
   margin: 0 auto;
