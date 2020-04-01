@@ -299,14 +299,12 @@ section .sorters{
 footer{
   font-family: "HelveticaNeue Light", serif;
   color:#555;
-  margin-left: 10%;
+  margin-left: auto;
   text-align: left;
 }
 @media screen and (min-width: 600px){
   footer{
-
     text-align: center;
-    margin-left: auto;
     margin-top: 5%;
   }
 }

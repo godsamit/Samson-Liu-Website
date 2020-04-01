@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./../styles/base-style.css">
   <link rel="stylesheet" href="./contact-style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/8b6dca0357.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -55,19 +57,31 @@
     </nav>
     </header>
     <script src="./../scripts/sidebar.js"></script>
+    <script src="./../scripts/form-submission-handler.js"></script>
     <div class="emailForm">
       <h2>Shoot me an email!</h2>
 
-      <form action="mailto:samsonliu96@gmail.com" method="post" enctype="text/plain">
-      Name:<br>
-      <input type="text" name="name"><br>
-      E-mail:<br>
-      <input type="text" name="mail"><br>
-      Content:<br>
-      <textarea name="message" rows="10" cols="100"></textarea>
-      <div class="g-recaptcha" data-sitekey="6LezM-UUAAAAAAfuCQTfPRt3uLXfHu0XqSM2ntOA"></div>
-      <input type="submit" value="Send">
+      <form class="gform" action="https://script.google.com/macros/s/AKfycbyTB_SOv3Ia3Wa-d8OceK8Xl4NLvaLB5TH5WSXh/exec" method="post" enctype="text/plain">
+        <div class="form-elements">
+          Name:<br>
+          <input type="text" required name="name"><span class="name error"></span><br>
+          E-mail:<br>
+          <input type="email" required name="email"><span class="email error"></span><br>
+          Message:<br>
+          <textarea type="text" required name="message" rows="10" cols="100"></textarea><span class="message error"></span><br>
+          <!--input id must be honeypot or else it wont work-->
+          <label class="sr-only">Keep this field blank</label>
+          <input id="honeypot" type="text" name="honeypot" value="" />
+          <!--the rest of your form-->
+            <br>
+          <input class="button" type="submit" value="Send">
+        </div>
       </form>
+    </div>
+    <div style="display:none" class="thankyou_message">
+     <!-- You can customize the thankyou message by editing the code below -->
+     <h3 class="thank">Thanks for reaching out! I will get back to you soon!
+     </h3>
     </div>
     <footer>
       <p>&copy;Samson Liu, 2018, All rights reserved.</p>

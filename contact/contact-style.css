@@ -1,15 +1,25 @@
 .emailForm{
   width: 80%;
   margin: 60px auto 0px;
-  font-family: "Noto Serif", serif;
+
   font-size: 1em;
   font-weight: 500;
   letter-spacing: -0.5px;
   color:#555;
   line-height: 1.5em;
 }
+input{
+  font-family: "Noto Serif", serif;
+}
 
-
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Noto Serif", serif;
+  font-size:1em;
+}
 @media screen and (min-width: 600px){
   .emailForm{
     width: 65%;
@@ -19,8 +29,32 @@ h2{
   color: #eb652d;
   font-size: 1.4em;
 }
+.thank{
+  color: #555;
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+}
 form{
   margin-top: 20px;
   font-family: 'Noto Serif', serif;
   font-size: 1em;
+}
+#honeypot, .sr-only {
+  display: none; /*makes the field not visible to humans*/
+}
+
+.button{
+  margin-top: 10px;
+  font-family: 'Bebas Book', serif;
+  font-size: 1.2em;
+  border: 1px #eb652d solid;
+}
+
+footer{
+  text-align: center;
+}
+
+.error{
+  color: red;
+  margin-left: 5px;
 }
