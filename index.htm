@@ -266,7 +266,7 @@
           name: '.name',
           time: '.time parseFloat',
           ascending: '.time parseFloat',
-          relevance: '.relevance'
+          relevance: '.relevance parseInt'
         },
         sortAscending: {
           name: true,
@@ -285,7 +285,7 @@
       // bind sort button click
       $('.sorters').on( 'click', 'button', function() {
         var sortValue = $(this).attr('data-sort-by');
-        var isAscending = (sortValue == 'ascending'|| sortValue =='name');
+        var isAscending = (sortValue == 'ascending'|| sortValue =='name' || sortValue == 'relevance');
         var newDirection = (isAscending) ? 'asc' : 'desc';
         $gallery.isotope({ sortBy: sortValue, sortAscending: isAscending });
       });
@@ -299,7 +299,7 @@
         });
       });
       $( document ).ready(function(){
-        $('.gallery').isotope({ sortBy: 'time' });
+        $('.gallery').isotope({ sortBy: 'relevance' });
       });
       
     </script>
