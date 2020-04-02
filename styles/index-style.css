@@ -220,7 +220,7 @@ main{
   }
 }
 
-.overlay p.time{
+.overlay p.time, .overlay p.relevance{
   display: none;
 }
 div h5 {
