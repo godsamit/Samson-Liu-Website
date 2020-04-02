@@ -71,7 +71,7 @@
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
           $(".form-elements").css("display","none");
-          $(".thankyou_message").csdd("display", "block");
+          $(".thankyou_message").css("display", "block");
         }
     };
     // url encode form data for sending as post data
