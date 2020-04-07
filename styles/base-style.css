@@ -211,6 +211,7 @@ nav h3 a.is-checked{
 -------------------------*/
 button{
   font-family: "Bebas Light", serif;
+  font-weight: 700;
   font-size: 4vw;
 }
 @media screen and (min-width: 600px){

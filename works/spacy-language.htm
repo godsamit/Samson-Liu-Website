@@ -45,14 +45,14 @@
   </div>
 <!--main content-->
   <div id="title">
-  <h1>GENERATING SPACES WITH LANGUAGE</h1>
+  <h1>DESCRIBE YOUR SPACE, AND SEE IT GENERATED BEFORE YOU</h1>
   <div class="summary"> 
     <table>
       <tr><th>Project date:</th> <th>2018 Fall - Present</th></tr>
       <tr><th>Project type:</th> <th>Research | Individual</th></tr>
-      <tr><th>Project prompt:</th> <th>Propose a design system prototype based on language input, to study and reflect on the language usage in the architecture field.</th></tr>
-      <tr><th>What I learned:</th><th> Unity 3D | Natural Language Processing | Prototyping and developing for virtual reality</th></tr>
-      <tr><th>What I would do differently:</th><th>Possibly let go of the virtual reality component to focus on fewer moving parts | Choose a more specific language model, possibly even construct one with more user-focused studies.</th></tr> 
+      <tr><th>Project prompt:</th> <th>Propose a design tool prototype based on descriptive language input.</th></tr>
+      <tr><th>What I learned:</th><th> Unity 3D | Natural Language Processing (SpaCy for Python) | Prototyping and developing for virtual reality</th></tr>
+      <tr><th>What I would do differently:</th><th>Possibly let go of the virtual reality component to focus on fewer moving parts. | Get samples of corpuses from different designer and have different word vector sets. | Conduct more user testing on the usability of the application. </th></tr> 
     </table>
   
   </div>
@@ -103,17 +103,34 @@
 <!--    <hr class="separater">-->
   <hr class="separater">
   <div class="text">
-  <h2>ARCHITECTURE, SPACES AND LANGUAGE</h2>
+  <h2>ARCHITECTURE, LANGUAGE AND WORD VECTORS</h2>
     <p>Architecture professors use... <i>"weird"</i> words, from abstract terminologies like <i>"deconstruction","spatiality"</i>, to out-of-place adjectives like <i>"rectilinear","robust"</i>. No professor would hold a discussion about such language. As students, we were just supposed to take the critique and somehow understand everything. Possibly due to my constant misunderstanding, my attempts at incorporating what I read from the "masters" into my design always came up short... From my experience, such confusion with design and language is common among architecture students. Spatial experiences could be so elusive and complex that words would often fail them. But we still have to talk about them, we still have to give critiques and carry on designing.<br><br>
     Therefore, in my thesis project, I can't help but wanting to explore the connection between language and spatial experiences. Since quantitative research is rarely done in architecture due to the physical constraints, my initial thought wad to utilize <b>virtual reality</b> to try to "measure" some words. As I look into the problem and the context, I gathered some more insight from previous researches:<br><br>
     <span class="li">Scientific measurements of built environment can be done and have been done in VR, in the most <b>strict</b> and <b>simplistic</b> way possible: let participants react to a space by choosing between two polar opposite words (e.g. open/closed, narrow/spacious), or describing exactly one spatial property (e.g. ceiling height) at a time.</span>
     <span class="li">Spatial perception is highly <b>subjective</b> and language itself is intrinsically <b>ambiguous</b>. For a less extreme word, the same word would mean differently to people with different experiences. Conversely, the same space would leave different impacts as well.</span>
-    <span class="li">NLP programs and machine learnings can use "word vectors" as a way to interpret a word and predict the next word in a conversation. The word vector by itself could largely be meaningless, and would be different in different systems. But <b>a single system is self-coherent.</b></span><br>
+    <span class="li">NLP programs and machine learnings can use "word vectors" (word embeddings) as a way to interpret a word and predict the next word in a conversation. The vectors are assigned by an <a href="https://ruder.io/word-embeddings-1/index.html#anoteonlanguagemodelling" target="_blank">algorithm</a> analyzing a corpus. The word vector by itself could largely be meaningless, and would be different depending on the system. But <b>a single system is self-coherent</b>, and the relationships between words can be <a href="http://byterot.blogspot.com/2015/06/five-crazy-abstractions-my-deep-learning-word2doc-model-just-did-NLP-gensim.html?m=1" target="_blank">fairly accurately represented by vector maths.</a></span><br>
     The first insight means that a completely objective and quantitative experiment would be very inefficient in a design environment.<br> 
     The second insight calls for emphasis on the uniqueness of each individual's language set and how it's linked to his/her spatial perception.<br> 
-    The third insight, however, reveals that each set could be self-coherent and decodable, and even provides a means to do so.
+    The third insight, however, reveals that everyone's language pattern could be self-coherent and decodable, and even provides a means for encoding and decoding.
     </p>
     <p></p>
+    <div class="slides3-container">
+      <div class="slides3">
+        <a href="#" data-featherlight="./../webpage-imgs/spacy-language/Intro-1.jpg">
+          <img src="./../webpage-imgs/spacy-language/Intro-1.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="#" data-featherlight="./../webpage-imgs/spacy-language/Intro-2.jpg">
+          <img src="./../webpage-imgs/spacy-language/Intro-2.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="#" data-featherlight="./../webpage-imgs/spacy-language/Intro-3.jpg">
+          <img src="./../webpage-imgs/spacy-language/Intro-3.jpg">
+        </a>
+      </div>
+    </div>
   <!--SiteAnalysis + InitialSchemes-->
   </div>
 
@@ -136,102 +153,20 @@
   </script>
   <hr class="separater">
   <div class="text">
-    <h2>WORD EMBEDDING</h2>
-    <p>Putting the gallery close to the bridge benefited my design in the following ways:<br><br>
-      <span class="li">On this deserted island, the <a href="https://historicbridges.org/bridges/browser/?bridgebrowser=pennsylvania/brunotisland/" target="_blank">Brunot Bridge</a> is one of the few prominent historical structures. It <b>enriches</b> the immediate <b>context</b>, <b>grounds</b> my proposal and <b>ties</b> it <b>to the history</b> of the island;</span>
-      <span class="li">As a "water pavilion", putting it close and above water makes the experience <b>more immersive</b>, allowing for <b>more</b> ways of <b>interactions with the river;</b></span>
-      <span class="li">From an <b>access</b> standpoint, it makes the building more accessible to the public, especially bikers, by connecting the existing footbridges to the bike tracks nearby. Otherwise, the island is very much secluded;
-      </span>
-      <span class="li">Putting the proposal out onto the river <b>increases the visibility</b> of the proposal to the public, which is crucial in this project. But since it remains in the non-barge area, it doesn't interrupt with the busy barge traffic on the Ohio River.
-      </span><br>
-      I moved through process models to explore the structural possibility to have a building hanging under a bridge. I worked the idea of <b>"frames"</b> into the design: A series of frames are <b>hung from the bridge</b>, lined up with the bridge's truss. These frames serve as the main structure for the building. Each frame can be <b>relatively independent</b> and they can have different shapes, Therefore, it allowed for oppotunities to create various <b>rises and gaps</b> on the floor and roof level, adding to the experience. Then, I worked on making the frames read lighter to create a bigger gallery space.</p>
+    <h2>PROPOSAL FOR A DESIGN TOOL</h2>
+    <p>From linear algebra, we know that <b>any vector space of dimension <i>N</i> can be have a set of <i>N</i> linearly independent vectors as its basis</b>. This means that any vector within the vector space can be seen as a combination of the basis. From this, I had this "crazy" idea:<br><br>
+    <b>Can I use a set of words as a basis for the vector space of word vectors?</b><br><br>
+    Then, all language could be mapped onto a small set of <b>"basic words"</b>. If each "basic word" in the basis corresponds to a kind of <b>"basic space"</b>, we could potentially break down complex language to an easier combination of "basic spaces".<br><br>
+    Of course, there are HUGE caveats. The nature of language is complex and ambiguous. A sentence could also often be more than its words combined. Also, words with multiple meanings are conflated into a single representation. What's more, the vector spaces of word vectors are <b>discrete</b> rather than continuous, which makes operations like scalar multiplication rather questionable. All in all, the proposed vector mapping is NOT meant to be taken as some "magic" that dumbs down the complexity of human language. It's also not meant to be a tool that could fully decode complex speech. However, due to the nature of this project being <b>design thesis</b>, rather than scientific research, I'm curious about the potential of such mappings in a design context, which is more loose. It would be interested to see what this new system could bring to the table. I believe such proposal has the following merits:<br><br>
+    <span class="li">Word vectors are still fairly accurate and self-consistent. With a tested algorithm that allows for synonyms and ambiguity in the mapping, the result could still be fairly understandable.</span>
+    <span class="li">It's interesting to see what the inaccuracies of mapping could bring to the table design-wise.</span>
+    <span class="li">Every person will have a different and individualized vector space. This design tool could potentially help people visualize their different understandings and thusly improve communication between designers.</span><br>
+    Note: Most word vector space has hundreds of dimensions. Does it mean I need to define hundreds of "basic words"? Not really. word vectors are often projected down drastically for visualization and other purposes, as I demonstrated in the diagrams. Remember in <i>N</i> dimension, you potentially only need <i>N</i> words as a base. Therefore, I could choose an arbitrary number for N, and just project the word vector space downward.</p>
     <p></p>
-    <div class="text-slide2">
-      <div class="slides2-container">
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Diagram1.png">
-            <img src="./../webpage-imgs/threads/Diagram1.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Diagram3.png">
-            <img data-lazy="./../webpage-imgs/threads/Diagram3.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Diagram4.png">
-            <img data-lazy="./../webpage-imgs/threads/Diagram4.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Diagram2.png">
-            <img src="./../webpage-imgs/threads/Diagram2.png">
-          </a>
-        </div>
-      </div>
-      <div class="slides2-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model1.png">
-            <img src="./../webpage-imgs/threads/Model1.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model9.png">
-            <img data-lazy="./../webpage-imgs/threads/Model9.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model5.png">
-            <img data-lazy="./../webpage-imgs/threads/Model5.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model2.png">
-            <img data-lazy="./../webpage-imgs/threads/Model2.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model3.png">
-            <img data-lazy="./../webpage-imgs/threads/Model3.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model4.png">
-            <img data-lazy="./../webpage-imgs/threads/Model4.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model6.png">
-            <img data-lazy="./../webpage-imgs/threads/Model6.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model7.png">
-            <img data-lazy="./../webpage-imgs/threads/Model7.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model8.png">
-            <img data-lazy="./../webpage-imgs/threads/Model8.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model10.png">
-            <img data-lazy="./../webpage-imgs/threads/Model10.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model11.png">
-            <img data-lazy="./../webpage-imgs/threads/Model11.png">
-          </a>
-        </div>
-        <div class="slides2">
-          <a href="#" data-featherlight="./../webpage-imgs/threads/Model12.png">
-            <img src="./../webpage-imgs/threads/Model12.png">
-          </a>
-        </div>
-      </div>
+    <div class="img-container">
+      <a href="./../webpage-imgs/spacy-language/Intro-4.jpg" data-featherlight>
+        <img class="lazy" data-src="./../webpage-imgs/spacy-language/Intro-4.jpg">
+      </a>
     </div>
   </div>
  
@@ -240,38 +175,16 @@
   <hr class="separater">
   <div class="text">
     <h2>AFFORDANCES OF VR</h2>
-    <p>The final design explored various experiences this unique structure can offer to visitors. <br><br>
-    Inside the building, there are various <b>floor-level changes</b>. Along with the programming decisions, this design aims to create a <b>narratively meaningful spatial sequence</b> for visitors. For example, entering from the island, visitors first descend and walk around the pier, appreciating the historical bridge and its history with the island. Then they arrive at the <i>"water monitoring lab"</i>, appreciating the <em>current</em> effort on water preservation on Ohio river. At last, the visitors ascend to the final gallery. The final gallery features practices around the world and future scenarios. As the floor becomes suddenly open, and the views widened, the visitors will gain a broader understanding and appreciation towards water preservation. <br><br>
-    From the platforms along the riverside to the glass floor beside the gallery, the building incorporates a variety of features that encourages visitors to <b>interact with the river</b>. The design provides both subtle teases, like the <a href="#" data-featherlight="./../webpage-imgs/threads/Model10.png">gaps</a> between the floors, and full-on open views, where the entire river becomes the backdrop for the outdoor theater.
+    <p>
     </p>
     <p></p>
-    <div class="slides3-container">
-      <div class="slides3">
-        <a data-featherlight href="./../webpage-imgs/threads/Plan1.jpg">
-          <img data-lazy="./../webpage-imgs/threads/Plan1.jpg">
-        </a>
-      </div>
-      <div class="slides3">
-        <a href="./../webpage-imgs/threads/Plan2.jpg" data-featherlight>
-          <img data-lazy="./../webpage-imgs/threads/Plan2.jpg">
-        </a>
-      </div>
-      <div class="slides3">
-        <a href="./../webpage-imgs/threads/Plan3.jpg" data-featherlight>
-          <img data-lazy="./../webpage-imgs/threads/Plan3.jpg">
-        </a>
-      </div>
-      <div class="slides3">
-        <a href="./../webpage-imgs/threads/SectionA.jpg" data-featherlight>
-          <img data-lazy="./../webpage-imgs/threads/SectionA.jpg">
-        </a>
-      </div>
-      <div class="slides3">
-        <a href="./../webpage-imgs/threads/Long-Section.jpg" data-featherlight>
-          <img data-lazy="./../webpage-imgs/threads/Long-Section.jpg">
-        </a>
-      </div>
-    </div>
+  </div>
+  <hr class="separater">
+  <div class="text">
+    <h2>WEBGL DEMO</h2>
+    <p>The final demo will be uploaded soon.
+    </p>
+    <p></p>
   </div>
    <script type="text/javascript">
       //sets up slider3
