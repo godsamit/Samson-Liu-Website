@@ -45,7 +45,7 @@
   </div>
 <!--main content-->
   <div id="title">
-  <h1>DESCRIBE YOUR SPACE, AND SEE IT GENERATED BEFORE YOU</h1>
+  <h1>DESCRIBE YOUR SPACE,<br> AND SEE IT GENERATED BEFORE YOU</h1>
   <div class="summary"> 
     <table>
       <tr><th>Project date:</th> <th>2018 Fall - Present</th></tr>
@@ -108,7 +108,7 @@
     Therefore, in my thesis project, I can't help but wanting to explore the connection between language and spatial experiences. Since quantitative research is rarely done in architecture due to the physical constraints, my initial thought wad to utilize <b>virtual reality</b> to try to "measure" some words. As I look into the problem and the context, I gathered some more insight from previous researches:<br><br>
     <span class="li">Scientific measurements of built environment can be done and have been done in VR, in the most <b>strict</b> and <b>simplistic</b> way possible: let participants react to a space by choosing between two polar opposite words (e.g. open/closed, narrow/spacious), or describing exactly one spatial property (e.g. ceiling height) at a time.</span>
     <span class="li">Spatial perception is highly <b>subjective</b> and language itself is intrinsically <b>ambiguous</b>. For a less extreme word, the same word would mean differently to people with different experiences. Conversely, the same space would leave different impacts as well.</span>
-    <span class="li">NLP programs and machine learnings can use "word vectors" (word embeddings) as a way to interpret a word and predict the next word in a conversation. The vectors are assigned by an <a href="https://ruder.io/word-embeddings-1/index.html#anoteonlanguagemodelling" target="_blank">algorithm</a> analyzing a corpus. The word vector by itself could largely be meaningless, and would be different depending on the system. But <b>a single system is self-coherent</b>, and the relationships between words can be <a href="http://byterot.blogspot.com/2015/06/five-crazy-abstractions-my-deep-learning-word2doc-model-just-did-NLP-gensim.html?m=1" target="_blank">fairly accurately represented by vector maths.</a></span><br>
+    <span class="li">NLP programs and machine learnings can use "word vectors" (word embeddings) as a way to interpret a word and predict the next word in a conversation. The vectors are assigned by an <a href="https://ruder.io/word-embeddings-1/index.html#anoteonlanguagemodelling" target="_blank">algorithm</a> analyzing a corpus. The word vector by itself could largely be meaningless, and would be different depending on the system. But <b>a single system is self-coherent</b>, and the relationships between words can be <a href="http://byterot.blogspot.com/2015/06/five-crazy-abstractions-my-deep-learning-word2doc-model-just-did-NLP-gensim.html?m=1" target="_blank">fairly accurately represented by vector maths between the corresponing vectors.</a></span><br>
     The first insight means that a completely objective and quantitative experiment would be very inefficient in a design environment.<br> 
     The second insight calls for emphasis on the uniqueness of each individual's language set and how it's linked to his/her spatial perception.<br> 
     The third insight, however, reveals that everyone's language pattern could be self-coherent and decodable, and even provides a means for encoding and decoding.
@@ -128,6 +128,11 @@
       <div class="slides3">
         <a href="#" data-featherlight="./../webpage-imgs/spacy-language/Intro-3.jpg">
           <img src="./../webpage-imgs/spacy-language/Intro-3.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="#" data-featherlight="./../webpage-imgs/spacy-language/Intro-4.jpg">
+          <img src="./../webpage-imgs/spacy-language/Intro-4.jpg">
         </a>
       </div>
     </div>
@@ -163,10 +168,17 @@
     <span class="li">Every person will have a different and individualized vector space. This design tool could potentially help people visualize their different understandings and thusly improve communication between designers.</span><br>
     Note: Most word vector space has hundreds of dimensions. Does it mean I need to define hundreds of "basic words"? Not really. word vectors are often projected down drastically for visualization and other purposes, as I demonstrated in the diagrams. Remember in <i>N</i> dimension, you potentially only need <i>N</i> words as a base. Therefore, I could choose an arbitrary number for N, and just project the word vector space downward.</p>
     <p></p>
-    <div class="img-container">
-      <a href="./../webpage-imgs/spacy-language/Intro-4.jpg" data-featherlight>
-        <img class="lazy" data-src="./../webpage-imgs/spacy-language/Intro-4.jpg">
-      </a>
+    <div class="slides3-container">
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Intro-5.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Intro-5.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Intro-6.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Intro-6.jpg">
+        </a>
+      </div>
     </div>
   </div>
  
@@ -174,10 +186,84 @@
 <!--DesignDiagrams + ProcessModels-->
   <hr class="separater">
   <div class="text">
-    <h2>AFFORDANCES OF VR</h2>
-    <p>
+    <h2>AFFORDANCE OF VR AND MESH GEOMETRIES</h2>
+    <p>After the thorough discussion of methodology, I need to build a proof-of-concept prototype to serve as an example of this new design tool. From the start of the thesis, I set my eyes on <b>Virtual Reality</b>, as I thought it would be an amazing opportunity to explore this technology. What's more, it would be a great medium for a gallery exhibition.<br><br>
+    At the start, I was hoping to generate typical architectural spaces. But soon I realized that such spaces are not fully utilizing the potential of VR. A digital and virtual space means that physics don't need to apply, and space itself could be way more dynamic and interactive. A prototype built in VR should face those possibilities and tackle the challenges it brings.<br><br>
+    Most architects build their digital models with <a href="https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline" target="_blank">NURBS geometry</a>. Such geometry is not native to most VR interfaces and would thusly require (usually manual) converting. Therefore, for the prototype, I decided to see what can I do with the <a href="https://en.wikipedia.org/wiki/Polygon_mesh" target="_blank">mesh geometry</a> instead. After some research, I decided on using a procedurally generated <a href="https://www.google.com/search?q=rounded+cube&sxsrf=ALeKk03afjJnE2OQy4-u-Mhpcs0V_gNNOQ:1586707864586&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjt2IW1o-PoAhXGgnIEHYRuAHcQ_AUoAnoECAwQBA&biw=1600&bih=757" target="_blank">rounded cube</a> with three fundamental operations to represent my "space":<br><br>
+    <span class="li"><b>"Sizing":</b> This is the most basic operation. It changes the dimensions of the cube. It calculates the planar room proportions, as well as ceiling height.</span>
+    <span class="li"><b>"Blob":</b> A region on the surface of the cube. Defined by two vectors. Operations could be done to change the vertex colors, or shift the postions of all the vertices within the "blob".</span>
+    <span class="li"><b>"Attractor"</b>: A point within the cube. All vertices close enough will be affected. Operations could be done to change the vertex color, or shift the positions of the "attracted" vertices.</span><br>
+    For the "blob" and "attractor", aggregated classes are established for groups of blobs or attractors, for easier management. By combining the various settings of these three operations, one can start to create some genuinely bizzare and dynamic spaces. For example, one can set the position of the user as the attractor point, which makes the space to react to where the user is. <br><br>
+    Hindsight is always 20/20. Looking back, the thesis could probably benefit more from gather data from different designers, instead of generating mesh geometries and flowing spaces. However, I still learned a lot from, and thoroughly enjoyed the process for VR prototyping.
     </p>
     <p></p>
+    <div class="img-container">
+      <a href="./../webpage-imgs/spacy-language/Diagrams/ClassRelationship.jpg" data-featherlight>
+        <img class="lazy" data-src="./../webpage-imgs/spacy-language/Diagrams/ClassRelationship.jpg">
+      </a>
+    </div>
+    <p></p>
+    <div class="slides3-container">
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Blob1.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Blob1.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Blob2.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Blob2.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Blob3.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Blob3.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Blob4.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Blob4.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/BlobCluster.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/BlobCluster.jpg">
+        </a>
+      </div>
+    </div>
+    <p></p>
+    <div class="slides3-container">
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Attractor1.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Attractor1.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Attractor2.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Attractor2.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Attractor3.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Attractor3.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/Attractor4.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/Attractor4.jpg">
+        </a>
+      </div>
+      <div class="slides3">
+        <a href="./../webpage-imgs/spacy-language/Diagrams/AttractorCluster.jpg" data-featherlight>
+          <img src="./../webpage-imgs/spacy-language/Diagrams/AttractorCluster.jpg">
+        </a>
+      </div>
+    </div>
+    <p></p>
+    <div class="img-container">
+      <a href="./../webpage-imgs/spacy-language/Diagrams/TextProcessing.jpg" data-featherlight>
+        <img class="lazy" data-src="./../webpage-imgs/spacy-language/Diagrams/TextProcessing.jpg">
+      </a>
+    </div>
   </div>
   <hr class="separater">
   <div class="text">
@@ -190,7 +276,8 @@
       //sets up slider3
     $(document).ready(function(){
       $('.slides3-container').slick({
-        lazyLoad: 'ondemand',
+        lazyLoad: 'progressive',
+        adaptiveHeight: true,
         infinite: true,
         dots: true,
         speed: 300,
